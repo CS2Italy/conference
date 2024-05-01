@@ -30,8 +30,8 @@ In the directory [_texts](_texts) there are markdown structured files.
 The directory [_data](_data) contains tabular files (csv) to store information to show as tables (es. program, speakers ...)<br/>
 The order of the list is based on the same order present in the csv file (actualy in alphabetic order from the first column)
 
-* [organizers.csv](_data/organizers.csv) there is the list of the organizers<br/><img src="screenshots/07.png" width="200px"/>
-
+* [organizers.csv](_data/organizers.csv) there is the list of the organizers
+  
 ## pictures
 The images are stored in the directory [img/](docs/assets/img) under the directory [docs/assets](assets).<br/>
 - [docs/img/assets/organizers](organizers)<br/>here are present all the photos of the organizers. The prefered size is a square (eg. 800 × 800 like the default photo profile in linkedIN). The website (with the css) transform the photos in black&white.<br/>Very important: each photo must have the same name stored in the csv file of the [organizers](_data/organizers.csv)
