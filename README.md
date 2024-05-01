@@ -23,8 +23,10 @@ most are visibile on the landing page<br/>
 ## texts
 In the directory [_texts](_texts) there are markdown structured files.
 * [01_about.md](docs/_texts/01_about.md) contains the description of the main website<br/><img src="screenshots/01_about.jpg" width="200px"/>
-* [02_topics.md](docs/_texts/02_topics.md) contains the description of the main website<br/><img src="screenshots/02.png" width="200px"/>
-* [03_dates.md](docs/_texts/03_dates.md) contains the description of the main website<br/><img src="screenshots/03.png" width="200px"/>
+* [02_topics.md](docs/_texts/02_topics.md) contains the description of the topics of the conference<br/><img src="screenshots/02.png" width="200px"/>
+* [03_dates.md](docs/_texts/03_dates.md) contains the dates of the conference<br/><img src="screenshots/03.png" width="200px"/>
+* [04_registrationfees.md](docs/_texts/04_registrationfees.md) contains the description of the fees for the registration
+* [05_sponsors.md](docs/_texts/05_sponsors.md) contains the information for the sponsors
 
 ## tables
 The directory [_data](_data) contains tabular files (csv) to store information to show as tables (es. program, speakers ...)<br/>
