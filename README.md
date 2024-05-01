@@ -31,6 +31,8 @@ The directory [_data](_data) contains tabular files (csv) to store information t
 The order of the list is based on the same order present in the csv file (actualy in alphabetic order from the first column)
 
 * [organizers.csv](_data/organizers.csv) there is the list of the organizers
+* [scientific_committee.csv](_data/scientific_committee.csv] the list of the members of the scientific committee
+
   
 ## pictures
 The images are stored in the directory [img/](docs/assets/img) under the directory [docs/assets](assets).<br/>
