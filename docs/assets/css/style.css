@@ -6,6 +6,27 @@
 * License: https://bootstrapmade.com/license/
 */
 
+@font-face {
+  font-family: "Red Hat Display";
+  src: url('../vendor/fonts/redhat/static/RedHatDisplay-Black.ttf') format('truetype'),
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Regular.ttf') format('truetype'),
+    url('../vendor/fonts/redhat/static/RedHatDisplay-LightItalic.ttf') format('truetype'),
+    url('../vendor/fonts/redhat/static/RedHatDisplay-BlackItalic.ttf') format('truetype'),
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Light.ttf') format('truetype'),
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Black.ttf') format('truetype'),            
+    url('../vendor/fonts/redhat/static/RedHatDisplay-MediumItalic.ttf') format('truetype'), 
+    url('../vendor/fonts/redhat/static/RedHatDisplay-BoldItalic.ttf') format('truetype')       
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Medium.ttf') format('truetype'), 
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Bold.ttf') format('truetype')             
+    url('../vendor/fonts/redhat/static/RedHatDisplay-ExtraBoldItalic.ttf') format('truetype')  
+    url('../vendor/fonts/redhat/static/RedHatDisplay-SemiBoldItalic.ttf') format('truetype'), 
+    url('../vendor/fonts/redhat/static/RedHatDisplay-ExtraBold.ttf') format('truetype')        
+    url('../vendor/fonts/redhat/static/RedHatDisplay-SemiBold.ttf') format('truetype'), 
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Italic.ttf') format('truetype')
+}
+
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
