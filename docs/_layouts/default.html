@@ -26,7 +26,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <link href="assets/vendor/bootstrap-cookie-banner/cookie-banner.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -60,7 +60,7 @@
           <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
-          <li><a class="nav-link scrollto" href="#organization">Organization</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organization</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -400,11 +400,11 @@
 
 
     <!-- ======= Organizers Section ======= -->
-    <section id="organization" class="section-with-bg">
+    <section id="organizers" class="section-with-bg">
       <br>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Organization</h2>
+          <h2>Organizers</h2>
         </div>
         <div class="row">
       {% for organizer in site.data.organizers %}
@@ -442,11 +442,59 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-
   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="assets/img/logo_cs2italy.png" alt="CS2Italy">
+            <p>{{ site.description }}</p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.trento.info/en/home" target="new">About Trento</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visittrentino.info/en" target="_new">Visit Trentino</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.iltrentinodeibambini.it/" target="_new">Family Activities</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a onclick="showCookieBanner()">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              CS2Italy<br/>Organization Committee <br>
+              Trento<br>
+              Italy <br>
+              <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ site.email }}</a><br>
+            </p>
+            <!--
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+      &#x1F36A; This site does not use cookies. No personal data is stored or tracked during your visit.
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+        I Got It
+      </button>
+    </div>
+    <!-- End of Cookie Banner -->
+
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>CS2Italy</strong>. CC-BY 4.0
+        &copy;<strong>CS2Italy</strong>. CC-BY 4.0 - design lihuama
       </div>
       <div class="credits">
         <!--
@@ -455,7 +503,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
       -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | Images: WallpaperCave | Logo: Canva 
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer><!-- End  Footer -->
@@ -468,6 +516,7 @@
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script async src="assets/vendor/bootstrap-cookie-banner/cookie-banner.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
