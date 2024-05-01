@@ -31,9 +31,15 @@ The directory [_data](_data) contains tabular files (csv) to store information t
 The order of the list is based on the same order present in the csv file (actualy in alphabetic order from the first column)
 
 * [organizers.csv](_data/organizers.csv) there is the list of the organizers
-* [scientific_committee.csv](_data/scientific_committee.csv] the list of the members of the scientific committee
+* [scientific_committee.csv](_data/scientific_committee.csv) the list of the members of the scientific committee
+* [program_day1.csv](_data/program_day1.csv) the schedule of the day 1
+* [program_day2.csv](_data/program_day2.csv) the schedule of the day 2
+* [program_day3.csv](_data/program_day3.csv) the schedule of the day 3
+* [program_day4.csv](_data/program_day4.csv) the schedule of the day 4
+* [sponsors.csv](_data/sponsors.csv) the list of the sponsors
 
-  
-## pictures
+
+## images
 The images are stored in the directory [img/](docs/assets/img) under the directory [docs/assets](assets).<br/>
-- [docs/img/assets/organizers](organizers)<br/>here are present all the photos of the organizers. The prefered size is a square (eg. 800 × 800 like the default photo profile in linkedIN). The website (with the css) transform the photos in black&white.<br/>Very important: each photo must have the same name stored in the csv file of the [organizers](_data/organizers.csv)
+- [docs/img/assets/](supporters)<br/>the logos of the sponsors.
+- [docs/img/gallery](gallery)<br/>the images used for the venue section
