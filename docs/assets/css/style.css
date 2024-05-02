@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: "Red Hat Display";
-  src: url('../vendor/fonts/redhat/static/RedHatDisplay-Black.ttf') format('truetype'),
-    url('../vendor/fonts/redhat/static/RedHatDisplay-Regular.ttf') format('truetype'),
+  src: url('../vendor/fonts/redhat/static/RedHatDisplay-Regular.ttf') format('truetype'),
+    url('../vendor/fonts/redhat/static/RedHatDisplay-Black.ttf') format('truetype'),
     url('../vendor/fonts/redhat/static/RedHatDisplay-LightItalic.ttf') format('truetype'),
     url('../vendor/fonts/redhat/static/RedHatDisplay-BlackItalic.ttf') format('truetype'),
     url('../vendor/fonts/redhat/static/RedHatDisplay-Light.ttf') format('truetype'),
