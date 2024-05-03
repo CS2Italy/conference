@@ -422,6 +422,8 @@
         </div>
       </div>
       <br><br>
+    {% assign count = site.data.scientific_committee | size %}
+    {% if count > 0 %}
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Scientific Committee</h2>
@@ -436,6 +438,7 @@
       {% endfor %}
         </div>
       </div>
+    {% endif %}
       </div>
     </section><!-- End Organizers Section -->
 
