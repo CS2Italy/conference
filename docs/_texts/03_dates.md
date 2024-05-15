@@ -11,4 +11,4 @@ Notification of tutorial acceptance: September 1, 2024<br/>
 <br/>
 <b>Tutorials:</b> 15 January 2025<br/>
 <b>Conference days:</b> 16 - 17 January 2025<br/>
-Establishment of the society <b>Computational Social Science Italy (CS2Italy):</b> 18 January 2025
+<b>Establishment of the society <b>Computational Social Science Italy (CS2Italy):</b> 18 January 2025
