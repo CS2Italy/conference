@@ -4,6 +4,8 @@ Notification of abstract acceptance: November 1, 2024<br/>
 Early-bird registration deadline: December 1, 2024<br/>
 Registrations close: December 31, 2024<br/>
 <br/>
+<b>Submit <a href="https://openreview.net/group?id=CS2Italy.org/2025/Conference">here</a> your proposal: </b><br/>
+<br/>
 <br/>
 <b>Tutorial deadlines:</b><br/>
 Tutorial proposals submission: July 30, 2024<br/>
