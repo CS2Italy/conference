@@ -32,13 +32,13 @@ In the directory [_texts](_texts) there are markdown structured files.
 The directory [_data](_data) contains tabular files (csv) to store information to show as tables (es. program, speakers ...)<br/>
 The order of the list is based on the same order present in the csv file (actualy in alphabetic order from the first column)
 
-* [organizers.csv](_data/organizers.csv) there is the list of the organizers
-* [scientific_committee.csv](_data/scientific_committee.csv) the list of the members of the scientific committee
-* [program_day1.csv](_data/program_day1.csv) the schedule of the day 1
-* [program_day2.csv](_data/program_day2.csv) the schedule of the day 2
-* [program_day3.csv](_data/program_day3.csv) the schedule of the day 3
-* [program_day4.csv](_data/program_day4.csv) the schedule of the day 4
-* [sponsors.csv](_data/sponsors.csv) the list of the sponsors
+* [organizers.csv](docs/_data/organizers.csv) there is the list of the organizers
+* [scientific_committee.csv](docs/_data/scientific_committee.csv) the list of the members of the scientific committee
+* [program_day1.csv](docs/_data/program_day1.csv) the schedule of the day 1
+* [program_day2.csv](docs/_data/program_day2.csv) the schedule of the day 2
+* [program_day3.csv](docs/_data/program_day3.csv) the schedule of the day 3
+* [program_day4.csv](docs/_data/program_day4.csv) the schedule of the day 4
+* [sponsors.csv](docs/_data/sponsors.csv) the list of the sponsors
 
 
 ## images
