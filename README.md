@@ -1,5 +1,5 @@
 # cs2italy
-repository of the cs2italy conference website<br/>
+repository of the cs2italy conference website - [https://github.io/cs2italy/conference](https://cs2italy.github.io/conference/) <br/>
 
 # organization of the content
 the site is created with jekyll technology and published as GitHub page
