@@ -1,4 +1,4 @@
-<h3>Conference Deadlines</h3><br/>
+<h3>Conference Deadlines</h3>
 Abstract submission: September 15, 2024<br/>
 Notification of abstract acceptance: November 1, 2024<br/>
 Early-bird registration deadline: December 1, 2024<br/>
@@ -25,7 +25,6 @@ Notification of tutorial acceptance: September 1, 2024<br/>
 <h2>Tutorial submission instructions</h2><br/>
 Submit your tutorial proposal by writing an email to: cs2italy@gmail.com<br/>
 A regular tutorial slot is 3 hours long. <br/>
-
 
 <h3>Conference dates</h3><br/>
 <b>Tutorials:</b> 15 January 2025<br/>
