@@ -10,8 +10,8 @@ Registrations close: January 10, 2025<br/>
 Submissions are in the form of extended abstracts in PDF format. The submission should include a title, a list of 3 keywords, and an extended abstract (serving as the main text of the submission). The abstract should outline the impact of the work, along with (if relevant) the main theoretical contribution, data and methods used, and findings. Authors are strongly encouraged to include figures and/or tables in their submission. Extended abstracts should comprise a maximum length of 2 pages including references, figures and tables.<br/>
 <br/>
 The accepted contributions will be selected for one of the following presentations:
-- a lightning talk (~6 mins) in a plenary session
-- an oral presentation in parallel tracks
+* a lightning talk (~6 mins) in a plenary session
+* an oral presentation in parallel tracks
 <br/>
 Lightning talks will be preferentially assigned to those requesting this form of presentation at submission and to early career researchers. In order to be included in the program, at least one of the authors must register for the conference by the early-bird registration deadline.<br/>
 <br/>
