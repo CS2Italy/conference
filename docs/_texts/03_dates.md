@@ -24,7 +24,13 @@ Notification of tutorial acceptance: September 1, 2024<br/>
 
 <h3>Tutorial submission instructions</h3>
 Submit your tutorial proposal by writing an email to: cs2italy@gmail.com<br/>
-A regular tutorial slot is 3 hours long. <br/>
+
+Submissions for Tutorial proposals should be in PDF format andd should be no more than 2 pages in length. Proposals should contain the following:
+* Title
+* Presenters/organizers:  Please provide names, affiliations, email addresses, for each presenter. 
+* Format: A description of the proposed event format and a list of proposed activities, with a description of the hands-on component (tools, packages, methods etc). 
+
+A regular tutorial slot is 3 hours long and the expected length of each tutorial is no more than 3 hours.<br/>
 
 <h3>Conference dates</h3>
 <b>Tutorials:</b> 15 January 2025<br/>
