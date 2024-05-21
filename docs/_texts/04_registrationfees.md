@@ -5,6 +5,8 @@
 * Student Ma:  €100
 * Private fee: €400
 <br/>
+<br/>
+
 ### Late bid
 * Senior fee: €350
 * Post-doc fee: €220
