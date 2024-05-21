@@ -1,4 +1,4 @@
-<h3>Conference Deadlines</h3>
+<h3>Conference deadlines</h3>
 Abstract submission: September 15, 2024<br/>
 Notification of abstract acceptance: November 1, 2024<br/>
 Early-bird registration deadline: December 1, 2024<br/>
@@ -18,7 +18,7 @@ Lightning talks will be preferentially assigned to those requesting this form of
 Submissions will be non-archival, and thus the presented work can be already published, in preparation for publication elsewhere, or ongoing research. Abstracts will be reviewed by multiple members of a Program Committee composed of experts in computational social science.<br/>
 For any questions regarding abstract submissions, please write to: cs2italy@gmail.com
 
-<h3>Tutorial deadlines:</h3>
+<h3>Tutorial deadlines</h3>
 Tutorial proposals submission: July 30, 2024<br/>
 Notification of tutorial acceptance: September 1, 2024<br/>
 
