@@ -1,10 +1,10 @@
 schedule,session,title,place,speaker
-09:00 AM - 10:00 PM,Conference Opening,,,
-10:00 AM - 01:00 PM,Keynote,,,
+09:00 AM<br/>10:00 PM,Conference Opening,,,
+10:00 AM<br/>01:00 PM,Keynote,,,
 ,Coffee Break,,,
 ,Parallel sessions and contributed talks,,,
-01:00 PM - 02:30 PM,Lunch,,,
-02:30 PM - 06:00 PM,Plenary session of lightning talks,,,
+01:00 PM<br/>02:30 PM,Lunch,,,
+02:30 PM<br/>06:00 PM,Plenary session of lightning talks,,,
 ,Coffee Break,,,
 ,Parallel sessions of contributed talks
 ,,,,
