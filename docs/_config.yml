@@ -10,9 +10,10 @@ where: Department of Sociology and Social Research - Trento, Italy
 organizers: University of Trento
 intro: The 2025 edition of the CS2 Italy Conference will lead to the establishment of the Society Computational Social Science Italy (CS2 Italy), the first scientific association of all Italian scholars working in the field of computational social science.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://cs2italy.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  lihuama
+github_username:  CS2Italy
+preview: 
 encoding: utf-8
 markdown: kramdown
 google_analytics: 
