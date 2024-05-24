@@ -13,7 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cs2italy.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  CS2Italy
-preview: 
+preview: "assets/img/preview.png"
 encoding: utf-8
 markdown: kramdown
 google_analytics: 
