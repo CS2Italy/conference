@@ -1,16 +1,18 @@
-### Introduction
-The CS2Italy2025 website serves as the official platform for the first Conference on Computational Social Science in Italy. This document provides a comprehensive overview of the implementation process, detailing the selection and adaptation of the template, integration with Jekyll, hosting on GitHub Pages, and the mechanisms for updating content. This site is designed to be a central hub for event information, registration, and updates, ensuring a seamless experience for both organizers and participants.
+### Comprehensive Report on the Implementation and Management of the CS2Italy2025 Conference Website
 
-### Report on the Implementation of the CS2Italy2025 Website
+#### Introduction
+The CS2Italy2025 website serves as the official platform for the first Conference on Computational Social Science in Italy. This comprehensive report provides an in-depth overview of the implementation process, detailing the selection and adaptation of the template, integration with Jekyll, hosting on GitHub Pages, and the mechanisms for updating content. The site is designed to be a central hub for event information, registration, and updates, ensuring a seamless experience for both organizers and participants.
 
 #### 1. Template Selection
-The website was developed using the Bootstrap version 5.3.2 template provided by Bootstrapmade. The chosen template, "The Event" (available [here](https://bootstrapmade.com/theevent-conference-event-bootstrap-template/)), was specifically designed for event websites, making it ideal for the CS2Italy conference.
+The website was developed using the Bootstrap version 5.3.2 template provided by Bootstrapmade. The chosen template, "The Event" (available [here](https://bootstrapmade.com/theevent-conference-event-bootstrap-template/)), was specifically designed for event websites, making it an ideal fit for the CS2Italy conference.
+
+The selection process focused on identifying a template that offered both visual appeal and functional flexibility. "The Event" template was chosen due to its clean design, responsive layout, and ease of customization. Its features, such as a built-in event schedule, speaker profiles, and registration sections, were particularly well-suited for the needs of the CS2Italy conference.
 
 #### 2. Template Adaptation
-The website structure was planned starting from the template and adapted to the specific needs of the client. This adaptation included:
+The website structure was planned starting from the template and adapted to meet the specific needs of the client. This adaptation process included:
 
-- **Defining the Structure:** Creating necessary sections for the website, such as the main page, event information, topics, dates, and registration methods.
-- **Choosing Colors and Images:** Defining the site's color scheme and selecting images released under a reuse license, with clickable information.
+- **Defining the Structure:** Creating necessary sections for the website, such as the main page, event information, topics, dates, and registration methods. Each section was tailored to provide clear and concise information, ensuring that visitors could easily find what they needed.
+- **Choosing Colors and Images:** The site's color scheme was defined to align with the branding of the CS2Italy conference. The primary colors used are detailed below, with their respective RGB codes in hexadecimal. Additionally, images released under a reuse license were selected, and clickable information was added to enhance user interaction.
 
 #### 3. Colors Used
 The primary colors used on the site, along with their respective RGB codes in hexadecimal, are:
@@ -21,23 +23,36 @@ The primary colors used on the site, along with their respective RGB codes in he
 - **Grayish Blue:** #494E5E (RGB: 73, 78, 94)
 - **Dark Gray:** #3C4254 (RGB: 60, 66, 84)
 
+These colors were chosen to create a professional and cohesive look, ensuring good contrast and readability across all devices.
+
 #### 4. Integration with Jekyll
-The template was adapted to work with Jekyll, a static site generator. This choice allowed for more efficient content management and straightforward publishing on GitHub Pages.
+The template was adapted to work with Jekyll, a static site generator. Jekyll was chosen for its simplicity and efficiency in managing static websites. This choice allowed for more efficient content management and straightforward publishing on GitHub Pages. Jekyll's modular structure facilitated the organization of content into distinct sections, making updates and maintenance straightforward.
 
 #### 5. Publishing on GitHub Pages
-The site was hosted on GitHub Pages, with the project repository accessible [here](https://github.com/CS2Italy/conference). All members of the CS2Italy organization on GitHub have access to make changes and updates.
+The site was hosted on GitHub Pages, leveraging its seamless integration with Git repositories. The project repository is accessible [here](https://github.com/CS2Italy/conference), allowing all members of the CS2Italy organization on GitHub to access, make changes, and updates.
+
+Using GitHub Pages provided several advantages, including automatic deployment of changes, version control, and collaboration features. It also ensured that the site could be quickly restored to a previous state if needed.
 
 #### 6. Domain Configuration
-A DNS domain was associated with the site published on GitHub Pages, making it accessible at https://cs2italy.org/.
+A DNS domain was associated with the site published on GitHub Pages, making it accessible at https://cs2italy.org/. This custom domain configuration enhances the site's professionalism and makes it easy for attendees to find.
 
 #### 7. Font Used
-The font used for the site is "RedHatDisplay".
+The font used for the site is "RedHatDisplay", which is licensed under the SIL Open Font License 1.1. This license allows for both personal and commercial use, modification, and redistribution, with certain conditions:
+
+- **Permissions:**
+  - The font can be used, studied, modified, and redistributed freely.
+  - It can be bundled, embedded, and redistributed with software.
+
+- **Restrictions:**
+  - The font cannot be sold by itself.
+  - Derivative works can be released under the same license.
+  - The font name must not be used to promote the derivative work without permission.
 
 #### 8. Privacy and Cookies
-The site does not load resources from domains other than the main page's domain. Additionally, it does not use cookies and therefore does not track any personal information. This is also stated in the cookie law banner.
+The site does not load resources from domains other than the main page's domain. Additionally, it does not use cookies and therefore does not track any personal information. This commitment to privacy is also stated in the cookie law banner, ensuring that visitors are aware of the site's privacy practices.
 
 #### 9. Third-Party Files
-All third-party files (JavaScript, CSS, fonts, etc.) are located in the `assets` directory of the project.
+All third-party files (JavaScript, CSS, fonts, etc.) are located in the `assets` directory of the project. This approach ensures that all resources are self-contained within the site, improving load times and security.
 
 ### Detailed Content Update Procedure
 Content updates are managed through a combination of configuration files, Markdown files for text content, CSV files for tabular data, and images stored in a designated directory. Below are the specific details on which files to update for different sections of the website:
@@ -118,5 +133,9 @@ For the review of papers to be submitted and conference registration, third-part
 
 ### Conclusion
 The creation of the CS2Italy2025 website followed a methodical process of selection, adaptation, and implementation, using modern technologies and efficient content management platforms. The result is a functional and easy-to-update website that effectively supports the organization of the Computational Social Science conference in Italy.
+
+This comprehensive approach ensures that the website not only meets the immediate needs of the conference but is also scalable and adaptable for future events. By leveraging GitHub Pages and Jekyll, the CS2Italy team can maintain a high level of control over content and updates, ensuring the site
+
+ remains current and relevant.
 
 If you need further details or assistance with specific technical aspects of the project, feel free to ask!
