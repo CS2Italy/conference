@@ -2,36 +2,24 @@
 
 # 1. Introduction
 
-The CS2Italy 2025 website serves as the official platform for the first
-Conference on Computational Social Science in Italy. This document
-provides an overview of the implementation process, detailing the
-selection and adaptation of the template, integration with Jekyll,
-hosting on GitHub Pages, and the mechanisms for updating content. The
-site is designed to be a central hub for event information,
-registration, and updates, ensuring a seamless experience for both
-organizers and participants.
+The CS2Italy 2025 website serves as the official platform for the first Conference on Computational Social Science in Italy.<br/> 
+This document provides an overview of the implementation process, detailing the selection and adaptation of the template, integration with Jekyll, hosting on GitHub Pages, and the mechanisms for updating content.\
+The site is designed to be a central hub for event information, registration, and updates, ensuring a seamless experience for both organizers and participants.
 
 # 2. Design of the CS2Italy 2025 Website
 
 ## 2.1 Template selection
 
-The website was developed using the Bootstrap version 5.3.2[^1] template
-provided by Bootstrapmade[^2]. The chosen template, "The Event"[^3] was
-specifically designed for event websites, making it an ideal fit for the
-CS2Italy conference.
-
-The selection process focused on identifying a template that offered
-both visual appeal and functional flexibility. \"The Event\" template
-was chosen due to its clean design, responsive layout, and ease of
-customization. Its features, such as a built-in event schedule, speaker
-profiles, and registration sections, were particularly well-suited for
-the needs of the CS2Italy conference.
+The website was developed using the Bootstrap version 5.3.2[^1] template provided by Bootstrapmade[^2].<br/>The chosen template, "The Event"[^3] was
+specifically designed for event websites, making it an ideal fit for the CS2Italy conference.
+<br/><br/>
+The selection process focused on identifying a template that offered both visual appeal and functional flexibility.<br/> "The Event" template was chosen due to its clean design, responsive layout, and ease of
+customization.<br/>Its features, such as a built-in event schedule, speaker profiles, and registration sections, were particularly well-suited for the needs of the CS2Italy conference.
 
 ## 2.2. Template adaptation
 
-The website structure was planned starting from the template and adapted
-to meet the specific needs of the client. This adaptation process
-included:
+The website structure was planned starting from the template and adapted to meet the specific needs of the client.\
+This adaptation process included:
 
 -   **Defining the Structure:**<br/>Creating necessary sections for the website, such as the main page, event information, topics, dates, and registration methods. Each section was tailored to provide clear and concise information, ensuring that visitors could easily find what they needed.
 -   **Choosing Colors and Images:**<br/>The site\'s color scheme was defined to align with the branding of the CS2Italy conference. The primary colors used are detailed below, with their respective RGB codes in hexadecimal. Additionally, images released under a reuse license were selected, and clickable information was added to enhance user interaction.
