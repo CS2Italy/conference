@@ -173,27 +173,32 @@
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Speakers</h2>
-          <p>TBA</p>
+          <p>{{ site.speakers_intro }}</p>
         </div>
-
-        <!-- <div class="row">
+      {% for speaker in site.data.speakers %}
+        <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+              <img src="assets/img/speakers/{{ speaker.picture }}"" alt="Speaker 1" class="img-fluid">
               <div class="details">
-                <h3><a href="speaker-details.html">Brenden Legros</a></h3>
-                <p>Quas alias incidunt</p>
+                <h3><a href="{{ speaker.website }}">{{ speaker.name }}</a></h3>
+		<h4>{{ speaker.position }} - {{ speaker.affiliation }}</a></h4>
+		<p><em>{{ speaker.schedule }}</em></p>
+		<p><strong>{{ speaker.title }}</strong></p>
+                <p>{{ speaker.description }}</p>
+		<!--
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
                   <a href=""><i class="bi bi-facebook"></i></a>
                   <a href=""><i class="bi bi-instagram"></i></a>
                   <a href=""><i class="bi bi-linkedin"></i></a>
                 </div>
+		-->
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
     </section><!-- End Speakers Section -->
     {% endif %}
