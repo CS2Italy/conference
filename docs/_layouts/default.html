@@ -109,8 +109,7 @@
         <div class="row">
           <div class="col-lg-6">
             <h2>About The Event</h2>
-            <p>{% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %} {{ about | markdownify }} {% endif %}
-            </p>
+            {% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %} {{ about | markdownify }} {% endif %}
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
@@ -131,21 +130,20 @@
 
     <!-- ======= CfP Section ======= -->
     <section id="cfp">
-      <div class="container" data-aos="fade-up" class="section-with-bg">
+      <div class="container section-with-bg"" data-aos="fade-up">
         <div class="section-header">
-	<br/>  
-	<h2>Topics</h2>
+		<br/>  
+		<h2>Topics</h2>
         </div>
 	<div class="row">
 		<div class="col-lg-1">&nbsp;</div>
-		<div class="col-lg-10">
-		We welcome submissions on any topic in the field of computational social science, including but not limited to:
-		<p>
-		{% if page.topics %} {% capture topics %}{% include_relative _texts/{{ page.topics }}%}{% endcapture %} {{ topics | markdownify }} {% endif %}
-		</p>
-		</div>
+			<div class="col-lg-10">
+			We welcome submissions on any topic in the field of computational social science, including but not limited to:
+			{% if page.topics %} {% capture topics %}{% include_relative _texts/{{ page.topics }}%}{% endcapture %} {{ topics | markdownify }} {% endif %}
+			</div>
 		<div class="col-lg-1">&nbsp;</div>
 	</div>
+      </div>
     </section><!-- End CfP Section -->
 
     <!-- ======= Submissions Section ======= -->
