@@ -174,11 +174,14 @@
       {% for speaker in site.data.speakers %}
         <div class="row">
           <div class="col-lg-4 col-md-6">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/{{ speaker.picture }}" alt="Speaker" class="img-thumbnail"> <!-- class="img-fluid"> -->
+            <div class="speaker"> <!-- data-aos="fade-up" data-aos-delay="100"> -->
+              <img src="assets/img/speakers/{{ speaker.picture }}" alt="Speaker" class="img-fluid">
                <div class="details">
-                <h3><a href="{{ speaker.website }}">{{ speaker.name }}</a></h3>
-		<h4 class="text-white">{{ speaker.position }} - {{ speaker.affiliation }}</h4>
+                <h3>
+			<a href="{{ speaker.website }}">
+			{{ speaker.name }}
+			</a><br/>{{ speaker.affiliation }}
+		</h3>
 		<p><em>{{ speaker.schedule }}</em></p>
 		<p><strong>{{ speaker.title }}</strong></p>
                 <p>{{ speaker.description }}</p>
