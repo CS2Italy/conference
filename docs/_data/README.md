@@ -31,7 +31,7 @@ name,affiliation,location
 ## speakers.csv
 list of the invited speaker
 ```bash
-name,position,affiliation,website,picture,schedule,title,description
+name,affiliation,website,picture,schedule,title,description
 ```
 ## sponsors.csv
 list of the sponsor\
