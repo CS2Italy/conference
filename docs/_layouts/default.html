@@ -130,7 +130,7 @@
 
     <!-- ======= CfP Section ======= -->
     <section id="cfp">
-      <div class="container section-with-bg"" data-aos="fade-up">
+      <div class="container section-with-bg" data-aos="fade-up">
         <div class="section-header">
 		<br/>  
 		<h2>Topics</h2>
@@ -154,11 +154,9 @@
           <h2>Dates & Submissions</h2>
         </div>
 	<div class="row">
-               <div class="col-lg-1">&nbsp;</div>
+        	<div class="col-lg-1">&nbsp;</div>
                 <div class="col-lg-10">
-                <p>
-	{% if page.dates %} {% capture dates %}{% include_relative _texts/{{ page.dates }}%}{% endcapture %} {{ dates | markdownify }} {% endif %}
-                </p>
+		{% if page.dates %} {% capture dates %}{% include_relative _texts/{{ page.dates }}%}{% endcapture %} {{ dates | markdownify }} {% endif %}
                 </div>
                 <div class="col-lg-1">&nbsp;</div>
 	</div>
@@ -177,7 +175,7 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <img src="assets/img/speakers/{{ speaker.picture }}"" alt="Speaker 1" class="img-thumbnail"> <!-- class="img-fluid"> -->
+              <img src="assets/img/speakers/{{ speaker.picture }}" alt="Speaker" class="img-thumbnail"> <!-- class="img-fluid"> -->
                <div class="details">
                 <h3><a href="{{ speaker.website }}">{{ speaker.name }}</a></h3>
 		<h4 class="text-white">{{ speaker.position }} - {{ speaker.affiliation }}</h4>
