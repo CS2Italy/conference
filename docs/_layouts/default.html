@@ -173,7 +173,7 @@
         </div>
 	<div class="row">
       {% for speaker in site.data.speakers %}
-
+      {% if speaker.name %}
           <div class="col-lg-3 col-md-3">
             <div class="speaker"> <!-- data-aos="fade-up" data-aos-delay="100"> -->
               <img src="assets/img/speakers/{{ speaker.picture }}" alt="Speaker" class="img-responsive">
@@ -197,6 +197,7 @@
               </div>
             </div>
           </div>
+	{% endif %}
 	{% endfor %}
 	</div>
       </div>
