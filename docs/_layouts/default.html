@@ -160,50 +160,40 @@
                 </div>
                 <div class="col-lg-1">&nbsp;</div>
 	</div>
-
     </section><!-- End Topics Section -->
-
-   {% if count_speakers > 0 %}
-    <!-- ======= Speakers Section ======= -->
-    <section id="speakers">
-      <div class="container" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Speakers</h2>
-          <p>{{ site.speakers_intro }}</p>
-        </div>
-	<div class="row d-flex justify-content-center align-items-center">
-      {% for speaker in site.data.speakers %}
-      {% if speaker.name %}
-          <div class="col-lg-3 col-md-3">
-            <div class="speaker"> <!-- data-aos="fade-up" data-aos-delay="100"> -->
-              <img src="assets/img/speakers/{{ speaker.picture }}" alt="Speaker" class="img-responsive">
-               <div class="details">
-                <h3>
-			<a href="{{ speaker.website }}">
-			{{ speaker.name }}
-			</a><br/>{{ speaker.affiliation }}
-		</h3>
-		<p><em>{{ speaker.schedule }}</em></p>
-		<p><strong>{{ speaker.title }}</strong></p>
-                <p>{{ speaker.description }}</p>
-		<!--
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-		-->
-              </div>
-            </div>
-          </div>
-	{% endif %}
-	{% endfor %}
+	{% if count_speakers > 0 %}
+	<!-- ======= Speakers Section ======= -->
+	<section id="speakers">
+	    <div class="container section-title" data-aos="fade-up">
+	        <div class="section-header">
+	            <h2>Speakers</h2>
+	             <p>{{ site.speakers_intro }}</p>
+	        </div>
+	    <!-- <div class="row d-flex justify-content-center align-items-center"> -->
+	        <div class="row gy-3">
+	        {% for speaker in site.data.speakers %}
+	        {% if speaker.name %}
+	            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+	                <div class="member">
+	                <img src="assets/img/speakers/{{ speaker.picture }}" class="img-fluid" alt="">
+	                <div class="member-info">
+	                    <div class="member-info-content">
+	                    <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
+	                    <span>{{ speaker.affiliation }}</span>
+	                    </div>
+	                    <div class="social">
+	                        <p><em>{{ speaker.schedule }}</em></p>
+	                        <p><strong>{{ speaker.title }}</strong></p>
+	                        <p>{{ speaker.description }}</p>
+	                    </div>
+	                </div>
+	                </div>
+	            </div><!-- End Team Member -->
+	        {% endif %}
+	        {% endfor %}
+	    </div>
 	</div>
-      </div>
-
-    </section><!-- End Speakers Section -->
-    {% endif %}
+	</section><!-- /Speakers Section -->
 
      <!-- ======= Schedule Section ======= -->
      <section id="schedule" class="section-with-bg">
