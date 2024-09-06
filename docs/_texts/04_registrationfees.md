@@ -1,3 +1,5 @@
+## Registration will open on October 15, 2024.  
+
 ### Early bid
 * Senior fee: €300
 * Post-doc fee: €200
