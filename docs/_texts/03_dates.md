@@ -1,11 +1,11 @@
 <h3>Conference deadlines</h3>
-Abstract submission: ~~September 15, 2024~~ September 20, 2024<br/>
+Abstract submission: ~~September 20, 2024~~<br/>
 Notification of abstract acceptance: November 1, 2024<br/>
 Early-bird registration deadline: December 1, 2024<br/>
 Registrations close: January 10, 2025<br/>
 
 <h3>Abstract submission instructions</h3>
-<b>Submit your abstract via the <a href="https://openreview.net/group?id=CS2Italy.org/2025/Conference">OpenReview portal</a>.</b><br/>
+<b>The deadline for submissions has expired.</a>.</b><br/>
 
 Submissions are in the form of extended abstracts in PDF format. The submission should include a title, authors' names and affiliations, a list of 3 keywords, and an extended abstract (serving as the main text of the submission). The abstract should outline the impact of the work, along with (if relevant) the main theoretical contribution, data and methods used, and findings. Extended abstracts should comprise a maximum length of 2 pages including references, figures and tables.
 
@@ -19,8 +19,8 @@ Submissions will be non-archival, and thus the presented work can be already pub
 For any questions regarding abstract submissions, please write to: cs2italy@gmail.com
 
 <h3>Tutorial deadlines</h3>
-Tutorial proposals submission: July 30, 2024<br/>
-Notification of tutorial acceptance: September 1, 2024<br/>
+Tutorial proposals submission: ~~July 30, 2024~~<br/>
+Notification of tutorial acceptance: ~~September 1, 2024~~<br/>
 
 <h3>Tutorial submission instructions</h3>
 Submit your tutorial proposal by writing an email to: cs2italy@gmail.com<br/>
