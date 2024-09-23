@@ -5,7 +5,7 @@ Early-bird registration deadline: December 1, 2024<br/>
 Registrations close: January 10, 2025<br/>
 
 <h3>Abstract submission instructions</h3>
-<b>The deadline for submissions has expired.</a>.</b><br/>
+<b>The deadline for submissions has expired.</b><br/>
 
 Submissions are in the form of extended abstracts in PDF format. The submission should include a title, authors' names and affiliations, a list of 3 keywords, and an extended abstract (serving as the main text of the submission). The abstract should outline the impact of the work, along with (if relevant) the main theoretical contribution, data and methods used, and findings. Extended abstracts should comprise a maximum length of 2 pages including references, figures and tables.
 
