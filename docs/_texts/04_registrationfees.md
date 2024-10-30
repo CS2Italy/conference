@@ -1,6 +1,6 @@
 Note: registration will open on October 15, 2024.
 
-### Early bid
+### Early bird
 * Senior fee: €300
 * Post-doc fee: €200
 * PhD fee: € 150
@@ -9,7 +9,7 @@ Note: registration will open on October 15, 2024.
 <br/>
 <br/>
 
-### Late bid
+### Late bird
 * Senior fee: €350
 * Post-doc fee: €220
 * PhD fee: € 160
