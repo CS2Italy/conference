@@ -1,4 +1,4 @@
-Note: registration will open on October 15, 2024.
+Note: registration will open on November 15, 2024.
 
 ### Early bird
 * Senior fee: €300
@@ -15,6 +15,7 @@ Note: registration will open on October 15, 2024.
 * PhD fee: € 160
 * Student Ma:  €100
 * Private fee: €500
+<br/>
 <br/>
 * Tutorials: €75
 * Dinner: €80 
