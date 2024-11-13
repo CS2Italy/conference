@@ -1,8 +1,8 @@
 **Registration is open!** To register, fill the <a href="https://isi.sixeleven.it/cs2italy/">form you find here</a>. 
 <br/>
-* Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possibile. 
-* To present their work, all speakers must register to CS2Italy and attend the conference in person.  
-* Registration fees are described below. All full conference fees include the participation to the tutorials. However, it is possible to register to attend the tutorials only, on January 15, 2025, at a reduced fee.   
+* Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possible. 
+* To present their work, all speakers must register for CS2Italy and attend the conference in person.  
+* Registration fees are described below. All full conference fees include the participation in the tutorials. However, it is possible to register to attend the tutorials only, on January 15, 2025, at a reduced fee.   
 <br/>
 <br/>
 
