@@ -1,4 +1,4 @@
-**Registration is open!** To register, fill the <a href="https://isi.sixeleven.it/cs2italy/">form you find here</a>. 
+**Registration is open!** To register, fill the <a href="https://www.isi.it/cs2italy/">form you find here</a>. 
 <br/>
 * Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possible. 
 * To present their work, all speakers must register for CS2Italy and attend the conference in person.  
