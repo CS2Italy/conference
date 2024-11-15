@@ -1,24 +1,13 @@
 
 ### Creating and analyzing parliamentary speeches
-<br/>
-
 **Presenters**: Alessio Palmero Aprosio (University of Trento)
-
 **Website**: <a href="https://sites.google.com/unitn.it/parlaspeechcs2italy">https://sites.google.com/unitn.it/parlaspeechcs2italy</a> 
-<br/>
 <br/>
 
 ### DataScientia services: collecting pervasive data on human behavior
-
-<br/>
-
-**Presenters**: Matteo Busso, Andrea Bontempelli, Ali Hamza, Leonardo Javier Malcotti (University of Trento)
-
-<br/>
+**Presenters**: Matteo Busso, Andrea Bontempelli, Ali Hamza, Leonardo Javier Malcotti (University of Trento)<br/>
 
 **Website**: https://datascientia.disi.unitn.it/ds-tutorial-cs2italy/
-
-<br/>
 <br/>
 
 ### Agentizing Computational Models
