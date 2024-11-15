@@ -220,12 +220,12 @@
             <div class="row schedule-item">
               <div class="col-md-2"><time>{{ day1.schedule }}</time></div>
               <div class="col-md-10">
-                <h4>{{ day1.session }}</h4>
-                <p>Speakers:</p>
+		<h4>{{ day1.title }}<span>{{ day1.speaker }}</span></h4>
+                <p>{{ day1.session }}</p>
               </div>
             </div>
             {% endfor %}
-
+		  
           </div>
           <!-- End Schdule Day 1 -->
 
@@ -237,16 +237,14 @@
         
                   <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
              {% for day2 in site.data.program_day2 %}
-                      <div class="row schedule-item">
-                    <div class="col-md-2">
-                <time>{{ day2.schedule }}</time>
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>{{ day2.schedule }}</time></div>
+              <div class="col-md-10">
+		<h4>{{ day2.title }}<span>{{ day2.speaker }}</span></h4>
+                <p>{{ day2.session }}</p>
               </div>
-                          <div class="col-md-10">
-                <h4>{{ day2.session }}</h4>
-                            <p>Speakers:</p>
-                          </div>
-                      </div>
-             {% endfor %}
+            </div>
+            {% endfor %}
             </div>
 
           </div>
@@ -260,15 +258,13 @@
         
                   <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-3">
              {% for day3 in site.data.program_day3 %}
-                      <div class="row schedule-item">
-                    <div class="col-md-2">
-                <time>{{ day3.schedule }}</time>
-              </div>
-                          <div class="col-md-10">
-                <h4>{{ day3.session }}</h4>
-                            <p>Speakers:</p>
-                          </div>
-                      </div>
+	            <div class="row schedule-item">
+	              <div class="col-md-2"><time>{{ day3.schedule }}</time></div>
+	              <div class="col-md-10">
+			<h4>{{ day3.title }}<span>{{ day3.speaker }}</span></h4>
+	                <p>{{ day3.session }}</p>
+	              </div>
+	            </div>
              {% endfor %}
             </div>
 
