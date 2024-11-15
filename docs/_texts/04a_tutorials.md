@@ -22,7 +22,7 @@
 
 ### The Italian Open Social Science Cloud: fostering advanced tools and services for social science research and evidence-based decision-making
 
-**Presenters**:  Giovanni Cerulli (FOSSR scientific responsible) and FOSSR members<br/>
+**Presenters**:  Giovanni Cerulli (CNR-IRCrES, FOSSR scientific responsible) and FOSSR members<br/>
 
 **Website**: <a href="https://www.fossr.eu/">https://www.fossr.eu/</a>
 
