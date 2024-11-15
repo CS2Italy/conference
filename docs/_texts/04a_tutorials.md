@@ -4,8 +4,6 @@
 
 **Presenters**: Alessio Palmero Aprosio (University of Trento)
 
-<br/>
-
 **Website**: <a href="https://sites.google.com/unitn.it/parlaspeechcs2italy">https://sites.google.com/unitn.it/parlaspeechcs2italy</a> 
 <br/>
 <br/>
@@ -24,13 +22,8 @@
 <br/>
 
 ### Agentizing Computational Models
-<br/>
-
 **Presenters**: Francesco Renzini, Flaminio Squazzoni (University of Milan)
-<br/>
-
 **Website**: https://behavelab.org/workshops/
-<br/>
 
 <br/>
 <br/>
