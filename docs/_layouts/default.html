@@ -73,6 +73,7 @@
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
 	  {% endif %}
           <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
+	  <li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>
           <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
@@ -303,9 +304,19 @@
       </div>
 
     </section><!-- End Schedule Section -->
-
-    <!-- ======= Registration Section ======= >-->
-    <section id="registrationfees">
+    <!-- ======= Tutorials section ====== -->
+    <section id="tutorials">
+	<div class="container" data-aos="fade-up">
+        	<div class="section-header">
+          		<h2>Tutorials</h2>
+        	</div>
+        <div class="row">
+          {% if page.tutorials %} {% capture tutorials %}{% include_relative _texts/{{ page.tutorials }}%}{% endcapture %} {{ tutorials | markdownify }} {% endif %}
+        </div>
+	</div>
+    </section>
+    <!-- ======= Registration Section ======= -->
+    <section id="registrationfees" class="section-with-bg">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Registration</h2>
@@ -318,7 +329,7 @@
 
 
         <!-- ======= Supporters Section ======= -->
-    <section id="supporters" class="section-with-bg">
+    <section id="supporters">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Sponsors</h2>
