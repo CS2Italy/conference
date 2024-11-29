@@ -20,8 +20,7 @@
 <br/>
 <br/>
 
-### The Italian Open Social Science Cloud: fostering advanced tools and services for social science research and evidence-based decision-making
-
+### The Italian Open Social Science Cloud and the RISIS Infrastructure: Fostering Advanced Tools and Services for Social Science Research and Evidence-Based Decision-Making
 **Presenters**:  Giovanni Cerulli (CNR-IRCrES, FOSSR scientific responsible) and FOSSR members<br/>
 
 **Website**: <a href="https://www.fossr.eu/">https://www.fossr.eu/</a>
