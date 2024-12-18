@@ -3,6 +3,7 @@
 * Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possible. 
 * To present their work, all speakers must register for CS2Italy and attend the conference in person.  
 * Registration fees are described below. All full conference fees include the participation in the tutorials. However, it is possible to register to attend the tutorials only, on January 15, 2025, at a reduced fee.  
+* If you are a BA or MA student (from any University), tutorials attendance is **free of charge**. 
 * To register for one of the tutorials, please send an email to cs2italy@gmail.com 
 <br/>
 <br/>
