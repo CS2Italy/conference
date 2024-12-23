@@ -1,11 +1,12 @@
 schedule,session,title,place,speaker
-09:00 AM<br/>10:00 PM,Conference Opening,,,
-10:00 AM<br/>01:00 PM,Keynote,,,
-,Coffee Break,,,
-,Parallel sessions and contributed talks,,,
-01:00 PM<br/>02:30 PM,Lunch,,,
-02:30 PM<br/>06:00 PM,Plenary session of lightning talks,,,
-,Coffee Break,,,
-,Parallel sessions of contributed talks
+09:00 <br/>9:30,Conference Opening,,,
+09:30 <br/>10:00,Inaugural address,,,Alessandro Vespignani
+10:00 <br/>10:45,Keynote speech,,,Esteban Moro
+10:45 <br/>11:15,Coffee break,,,
+11:15 <br/>01:00 PM,Parallel sessions,,,
+01:00 <br/>02:30 PM,Lunch,,,
+02:30 <br/>03:15 PM,Keynote speech,,,Alison Heppenstall
+03:15 <br/>03:45 PM,Coffee break,,,
+03:45 <br/>05:30 PM,Parallel sessions,,,
 ,,,,
-08:00 PM,Conference Dinner,,,
+08:00 PM,Conference Dinner,Ristorante Ca de' Gobj,,
