@@ -1,8 +1,9 @@
 schedule,session,title,place,speaker
-09:00am<br/>12:30pm,Keynote,,,
-,Coffee Break,,,
-,Parallel sessions and contributed talks,,,
-01:00pm<br/>02:30pm,Lunch,,,
-02:30pm<br/>06:00pm,Keynote,,,
-,Coffee Break,,,
-,Parallel sessions of contributed talks
+09:00 - 09:30,Lightning Talks,,,
+10:00 - 11:00,,Parallel sessions,,
+11:00 - 11:30,,Coffee Break,,
+11:30 - 01:00 PM,,Parallel sessions,,
+01:00 - 02:30 PM,,Lunch,,
+02:30 - 03:15 PM,Keynote speech,Alex Mesoudi (University of Exeter),,
+03:15 - 03:45 PM,,Coffee Break,,
+03:45 - 05:30 PM,,Parallel sessions,,
