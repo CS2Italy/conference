@@ -146,6 +146,10 @@ h6 {
   margin-bottom: 10px;
 }
 
+.section-header h4 {
+  text-align: center;
+}
+
 .section-header p {
   text-align: center;
   padding: 0;
