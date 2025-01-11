@@ -1,4 +1,4 @@
-**Registration is open!** To register, fill the <a href="https://www.isi.it/cs2italy/">form you find here</a>. 
+**Registration is closed**.  
 <br/>
 * Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possible. 
 * To present their work, all speakers must register for CS2Italy and attend the conference in person.  
@@ -8,7 +8,7 @@
 <br/>
 <br/>
 
-### Early bird (until December 20, 2024)
+### Early bird ~~(until December 20, 2024)~~
 * Senior fee: €300
 * Post-doc fee: €200
 * PhD fee: € 150
@@ -17,7 +17,7 @@
 <br/>
 <br/>
 
-### Late bird (after December 20, 2024)
+### Late bird ~~(after December 20, 2024)~~
 * Senior fee: €350
 * Post-doc fee: €220
 * PhD fee: € 160
