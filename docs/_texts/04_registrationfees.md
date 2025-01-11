@@ -30,5 +30,5 @@
 * Conference Dinner: €80 
 <br/>
 
-**Registration to the CS2Italy conference (all fees) includes a one-year membership to the Society Computational Social Science Italy that will be established on Saturday, January 18, 2025.**
+**Registration to the CS2Italy conference (all fees) includes a one-year membership to the Society "Computational Social Science Italy" that will be established on Saturday, January 18, 2025.**
 
