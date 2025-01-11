@@ -2,7 +2,7 @@
 Abstract submission: ~~September 20, 2024~~<br/>
 Notification of abstract acceptance: ~~November 10, 2024~~<br/>
 Early-bird registration deadline: ~~December 31, 2024~~<br/>
-Registrations close: January 10, 2025<br/>
+Registrations close: ~~January 10, 2025~~<br/>
 
 <h3>Abstract submission instructions</h3>
 <b>The deadline for submissions has expired.</b><br/>
