@@ -470,12 +470,31 @@
       {% endfor %}
         </div>
       </div>
+      br><br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Local Organizing Committee</h2>
+        </div>
+        <div class="row">
+      {% for local_org in site.data.local_organizing_committee %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <div class="details">
+               <big><a href="{{ local_org.website }}" target="_new">{{ local_org.name }}</a></big><br/>
+               {{ local_org.affiliation }}
+               </div>
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
       <br><br>
     {% assign count = site.data.scientific_committee | size %}
     {% if count > 0 %}
       <div class="container section-white-bg" data-aos="fade-up">
         <div class="section-header">
-          <h2>Local Organizing Committee</h2>
+          <h2>Scientific Committee</h2>
         </div>
         <div class="row">
       {% for member in site.data.scientific_committee %}
