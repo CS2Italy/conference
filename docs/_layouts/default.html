@@ -454,16 +454,16 @@
       <br><br>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>General Chairs</h2>
+          <h2>Program Chairs</h2>
         </div>
         <div class="row">
-      {% for organizer in site.data.organizers %}
+      {% for program_chair in site.data.program_chairs %}
           <div class="col-lg-3 col-md-4">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
               <div class="details">
-               <big><a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a></big><br/>
-               {{ organizer.affiliation }}
+               <big><a href="{{ program_chair.website }}" target="_new">{{ program_chair.name }}</a></big><br/>
+               {{ program_chair.affiliation }}
                </div>
               </div>
             </div>
