@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	  <meta http-equiv="Pragma" content="no-cache">
+	  <meta http-equiv="Expires" content="0">
+	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	  <title>{{ site.title }}</title>
+	  <meta content="{{ site.intro }}" name="description">
+	  <meta content="{{ site.keywords }}" name="keywords">
+	  <meta name="title" content="{{ site.title }}" />
+	  <meta name="description" content="{{ site.description }}" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:title" content="{{ site.title }}" />
+	<meta property="og:description" content="{{ site.description }}" />
+	<meta property="og:image" content="{{ site.preview }}" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="{{ site.intro }}" />
+	<meta property="twitter:url" content="{{ site.url }}" />
+	<meta property="twitter:title" content="{{ site.title }}" />
+	<meta property="twitter:description" content="{{ site.description }}" />
+	<meta property="twitter:image" content="{{ site.preview }}" />
+
+	
+	  <!-- Favicons -->
+	  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+	  <link rel="manifest" href="asset/img/site.webmanifest">
+
+	  <!-- Vendor CSS Files -->
+	  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+	  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+	  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+	  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+	  <link href="assets/vendor/bootstrap-cookie-banner/cookie-banner.css" rel="stylesheet">
+	  <!-- Template Main CSS File -->
+	  <link href="assets/css/style.css" rel="stylesheet">
+
+	  <!-- =======================================================
+	  * Template Name: TheEvent
+	  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+	  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+	  * Author: BootstrapMade.com
+	  * License: https://bootstrapmade.com/license/
+	  ======================================================== -->
+</head>
+{% assign count_speakers = site.data.speakers | size %}
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="index.html" class="scrollto"><img src="assets/img/logo.svg" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">The Conference</a></li>
+          <li><a class="nav-link scrollto" href="#cfp">Topics</a></li>
+          <li><a class="nav-link scrollto" href="#dates">Dates</a></li>
+	  {% if count_speakers > 0 %}
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+	  {% endif %}
+          <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
+	  <li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>
+          <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
+          <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organization</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="home">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+	    <h1 class="mb-4 pb-0"><span>{{ site.title }}</span>{{ site.year}}<br>1st Conference<br>On <span>Computational</span> Social Science</h1>
+	    <p class="mb-4 pb-0">{{ site.organizers }}</p>
+	    <p class="mb-4 pb-0">{{ site.datelocation }}</p>
+      <a href="#about" class="about-btn scrollto">About the Conference</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            {% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %} {{ about | markdownify }} {% endif %}
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>{{ site.where }}</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>{{ site.when }}</p>
+          </div>
+        </div>
+        <div class="row">
+          {{ site.intro }}
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= CfP Section ======= -->
+    <section id="cfp">
+      <div class="container section-white-bg" data-aos="fade-up">
+        <div class="section-header">
+		<br/>  
+		<h2>Topics</h2>
+        </div>
+	<div class="row">
+		<div class="col-lg-1">&nbsp;</div>
+			<div class="col-lg-10">
+			We welcome submissions on any topic in the field of computational social science, including but not limited to:
+			{% if page.topics %} {% capture topics %}{% include_relative _texts/{{ page.topics }}%}{% endcapture %} {{ topics | markdownify }} {% endif %}
+			</div>
+		<div class="col-lg-1">&nbsp;</div>
+	</div>
+      </div>
+    </section><!-- End CfP Section -->
+
+    <!-- ======= Submissions Section ======= -->
+    <section id="dates" class="section-with-bg">
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Dates</h2>
+        </div>
+	<div class="row">
+        	<div class="col-lg-1">&nbsp;</div>
+                <div class="col-lg-10">
+		{% if page.dates %} {% capture dates %}{% include_relative _texts/{{ page.dates }}%}{% endcapture %} {{ dates | markdownify }} {% endif %}
+                </div>
+                <div class="col-lg-1">&nbsp;</div>
+	</div>
+    </section><!-- End Topics Section -->
+
+   {% if count_speakers > 0 %}
+   <!-- ======= Speakers Section ======= -->
+<section id="speakers">
+	<div class="container section-title" data-aos="fade-up">
+		<div class="section-header">
+	        	<h2>Invited Speakers</h2>
+	             	<p>{{ site.speakers_intro }}</p>
+	        </div>
+    <div class="section-header">
+	        	<h4>Inaugural Address</h4>
+            <p>Alessandro Vespignani, Northeastern University and ISI Foundation</p>
+	        </div>
+	    <!-- <div class="row d-flex justify-content-center align-items-center"> -->
+	      	<div class="row d-flex justify-content-center align-items-center">
+	        {% for speaker in site.data.speakers %}
+	        {% if speaker.name %}
+	            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+	                <div class="member">
+	                <img src="assets/img/speakers/{{ speaker.picture }}" class="img-fluid" alt="">
+	                <div class="member-info">
+	                    <div class="member-info-content">
+	                    <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
+	                    <span>{{ speaker.affiliation }}</span>
+	                    </div>
+	                    <div class="social">
+	                        <p><em>{{ speaker.schedule }}</em></p>
+	                        <p><strong>{{ speaker.title }}</strong></p>
+	                        <p>{{ speaker.description }}</p>
+	                    </div>
+	                </div>
+	                </div>
+	            </div><!-- End Team Member -->
+	        {% endif %}
+	        {% endfor %}
+	    </div>
+	</div>
+	</section><!-- /Speakers Section -->
+{% endif %}
+	  
+     <!-- ======= Schedule Section ======= -->
+     <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Program</h2>
+        </div>
+        <div class="section-header">
+          <h4>The detailed program of the parallel sessions is <a href="https://drive.google.com/file/d/1LBWzoebdQnHHph6TRxum_6dYglprmzM9/view?usp=sharing"> available here</a>.</h4>
+        </div>
+        <!--<div class="section-header">
+          <h4>The draft statute of the Society for Computational Social Science Italy is <a href="https://drive.google.com/file/d/1pGcIJY4FzmYv5VKMsmp0VWcc4yccmcnO/view?usp=sharing"> available here</a>.</h4>
+        </div>-->
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Tutorials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Conference Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Conference Day 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-4" role="tab" data-bs-toggle="tab">Conference Day 3</a>
+          </li>
+        </ul>
+
+        <h3 class="sub-heading">All times below are <a href="https://time.is/Trento">CET.</a></h3>
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <!-- Schedule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            <h2>Tutorials in parallel sessions</h2>
+            <h3>(Wednesday, 15 January 2025)</h3>
+            {% for day1 in site.data.program_day1 %}
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>{{ day1.schedule }}</time></div>
+              <div class="col-md-10">
+		<h4>{{ day1.title }}&nbsp;<span>{{ day1.speaker }}</span></h4>
+                <p>{{ day1.session }}</p>
+              </div>
+            </div>
+            {% endfor %}
+		  
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schedule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+            <h2>Main Conference</h2>
+            <h3>(Thursday, 16 January 2025)</h3>
+        
+                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
+             {% for day2 in site.data.program_day2 %}
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>{{ day2.schedule }}</time></div>
+              <div class="col-md-10">
+		<h4>{{ day2.title }}<span>&nbsp;{{ day2.speaker }}</span></h4>
+                <p>{{ day2.session }}</p>
+              </div>
+            </div>
+            {% endfor %}
+            </div>
+
+          </div>
+          <!-- End Schedule Day 2 -->
+
+          <!-- Schedule Day3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+            <h2>Main Conference</h2>
+            <h3>(Friday, 17 January 2025)</h3>
+        
+                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-3">
+             {% for day3 in site.data.program_day3 %}
+	            <div class="row schedule-item">
+	              <div class="col-md-2"><time>{{ day3.schedule }}</time></div>
+	              <div class="col-md-10">
+			<h4>{{ day3.title }}&nbsp;<span>{{ day3.speaker }}</span></h4>
+	                <p>{{ day3.session }}</p>
+	              </div>
+	            </div>
+             {% endfor %}
+            </div>
+
+          </div>
+          <!-- End Schedule Day 3 -->
+
+          <!-- Schedule Day4 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
+
+            <h2>Establishment of the Society for Computational Social Science Italy</h2>
+            <h3>(Saturday, 18 January 2025)</h3>
+        
+                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-4">
+             {% for day4 in site.data.program_day4%}
+	            <div class="row schedule-item">
+	              <div class="col-md-2"><time>{{ day4.schedule }}</time></div>
+	              <div class="col-md-10">
+			<h4>{{ day4.title }}&nbsp;<span>{{ day4.speaker }}</span></h4>
+	                <p>{{ day4.session }}</p>
+	              </div>
+	            </div>
+             {% endfor %}
+            </div>
+
+          </div>
+          <!-- End Schedule Day 4 -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- End Schedule Section -->
+    <!-- ======= Tutorials section ====== -->
+    <section id="tutorials">
+	<div class="container" data-aos="fade-up">
+        	<div class="section-header">
+          		<h2>Tutorials</h2>
+        	</div>
+        <div class="row">
+          {% if page.tutorials %} {% capture tutorials %}{% include_relative _texts/{{ page.tutorials }}%}{% endcapture %} {{ tutorials | markdownify }} {% endif %}
+        </div>
+	</div>
+    </section>
+    <!-- ======= Registration Section ======= -->
+    <section id="registrationfees" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Registration</h2>
+        </div>
+        <div class="row">
+          {% if page.registrationfees %} {% capture registrationfees %}{% include_relative _texts/{{ page.registrationfees }}%}{% endcapture %} {{ registrationfees | markdownify }} {% endif %}
+        </div>
+      </div>
+    </section><!-- End Registration Section -->
+
+<!-- ======= Supporters Section ======= -->
+    <section id="supporters">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+            <div class="row">
+              {% if page.sponsors %} {% capture sponsors %}{% include_relative _texts/{{ page.sponsors }}%}{% endcapture %} {{ sponsors | markdownify }} {% endif %}
+            </div>
+    
+            <div class="row g-0 supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+              {% for sponsors in site.data.sponsors %}
+              <!-- name,url,logo,category -->
+              <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="supporter-logo">
+                  <a  href="{{ sponsors.url }}" target="_new"><img src="assets/img/supporters/{{ sponsors.logo }}" class="img-fluid" alt=""></a>
+                </div>
+              </div>
+              {% endfor %}
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- End Sponsors Section -->
+
+
+
+    <!-- ======= Venue Section ======= -->
+    <section id="venue" class="section-with-bg">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Venue</h2>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-6 venue-map">
+<iframe width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/it/map/cs2italy_1043580?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false#13/46.0685/11.1063"></iframe>
+	  </div>
+
+          <div class="col-lg-6 venue-info">
+            <div class="row justify-content-center">
+              <div class="col-11 col-lg-8 position-relative">
+                <h3><a href="https://www.sociologia.unitn.it/en">Department of Sociology and Social Research</a><br>Trento, Italy</h3>
+                <p>Via Giuseppe Verdi 26, Trento</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/gallery/trento1.jpg" class="glightbox" data-gall="venue-gallery" data-title="Piazza Duomo by Enrico Celesti">
+                <img src="assets/img/gallery/trento1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/gallery/trento2.jpg" class="glightbox" data-gall="venue-gallery"  data-title="MuSE by ESA"></a>
+                <img src="assets/img/gallery/trento2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/gallery/trento3.jpg" class="glightbox" data-gall="venue-gallery" data-title="Loggia in Buonconsiglio Castle by Carolyn Derstine">
+                <img src="assets/img/gallery/trento3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="venue-gallery">
+              <a href="assets/img/gallery/trento4.jpg" class="glightbox" data-gall="venue-gallery"  data-title="Piedicastello by Roberto Zanin"></a>
+                <img src="assets/img/gallery/trento4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Venue Section -->
+
+
+    <!-- ======= Organizers Section ======= -->
+    <section id="organizers">
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Organizers</h2>
+        </div>
+        <div class="row">
+      {% for organizer in site.data.organizers %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <div class="details">
+               <big><a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a></big><br/>
+               {{ organizer.affiliation }}
+               </div>
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
+      <br><br>
+    {% assign count = site.data.scientific_committee | size %}
+    {% if count > 0 %}
+      <div class="container section-white-bg" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Scientific Committee</h2>
+        </div>
+        <div class="row">
+      {% for member in site.data.scientific_committee %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <span class="member">{{ member.name }}</span><br/>{{ member.affiliation }}
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+      </div>
+    </section><!-- End Organizers Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="assets/img/logo_cs2italy.png" alt="CS2Italy">
+            <p>{{ site.description }}</p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.trento.info/en/home" target="new">About Trento</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visittrentino.info/en" target="_new">Visit Trentino</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.iltrentinodeibambini.it/" target="_new">Family Activities</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a onclick="showCookieBanner()">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              CS2Italy<br/>Organization Committee <br>
+              Trento<br>
+              Italy <br>
+              <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ site.email }}</a><br>
+            </p>
+            <!--
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+      &#x1F36A; This site does not use cookies. No personal data is stored or tracked during your visit.
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+        I Got It
+      </button>
+    </div>
+    <!-- End of Cookie Banner -->
+
+    <div class="container">
+      <div class="copyright">
+        &copy;&nbsp;<strong>CS2Italy</strong>&nbsp;CC-BY 4.0 - design lihuama
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script async src="assets/vendor/bootstrap-cookie-banner/cookie-banner.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

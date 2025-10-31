@@ -1,0 +1,43 @@
+title: CS2Italy
+email: cs2italy@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Join the premier CS2 Italy Conference, a pivotal event for computational social scientists in Italy and internationally. Scheduled for 2025, this conference will feature interdisciplinary collaboration among experts in economics, sociology, psychology, and more. Expect in-depth discussions, innovative research, and the launch of the Society Computational Social Science Italy (CS2 Italy), a new association for scholars in the field
+keywords: conference, cs2italy, computational social science, trento, italy, fbk
+year: 2025
+datelocation: 15-18 January 2025 - Trento, Italy
+when: Wednesday to Saturday 15-18 January 2025
+where: Department of Sociology and Social Research - Trento, Italy
+organizers: University of Trento
+intro: The 2025 edition of the CS2 Italy Conference will lead to the establishment of the Society Computational Social Science Italy (CS2 Italy), the first scientific association of all Italian scholars working in the field of computational social science.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cs2italy.org/" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  CS2Italy
+preview: "assets/img/preview.png"
+encoding: utf-8
+markdown: kramdown
+google_analytics: 
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

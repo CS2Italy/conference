@@ -1,14 +1,14 @@
 title: CS2Italy
 email: cs2italy@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Join the premier CS2 Italy Conference, a pivotal event for computational social scientists in Italy and internationally. Scheduled for 2025, this conference will feature interdisciplinary collaboration among experts in economics, sociology, psychology, and more. Expect in-depth discussions, innovative research, and the launch of the Society Computational Social Science Italy (CS2 Italy), a new association for scholars in the field
-keywords: conference, cs2italy, computational social science, trento, italy, fbk
-year: 2025
-datelocation: 15-18 January 2025 -Trento, Italy
-when: Wednesday to Saturday 15-18 January 2025
-where: Department of Sociology and Social Research - Trento, Italy
-organizers: University of Trento
-intro: The 2025 edition of the CS2 Italy Conference will lead to the establishment of the Society Computational Social Science Italy (CS2 Italy), the first scientific association of all Italian scholars working in the field of computational social science.
+  Join the premier CS2 Italy Conference, a pivotal event for computational social scientists in Italy and internationally. Scheduled for 2026, this conference will feature interdisciplinary collaboration among experts in economics, sociology, psychology, and more. Expect in-depth discussions, innovative research, and the launch of the Society Computational Social Science Italy (CS2 Italy), a new association for scholars in the field
+keywords: conference, cs2italy, computational social science, torino, italy, fondazione isi
+year: 2026
+datelocation: 19-21 May 2026 - Torino, Italy
+when: Tuesday to Thursday 19-21 May 2026
+where: OGR Torino, Italy
+organizers: ISI Foundation 
+intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cs2italy.org/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

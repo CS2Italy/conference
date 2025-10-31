@@ -73,7 +73,7 @@
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
 	  {% endif %}
           <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
-	  <li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>
+          <!--<li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>-->
           <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
@@ -87,7 +87,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="home">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-	    <h1 class="mb-4 pb-0"><span>{{ site.title }}</span>{{ site.year}}<br>1st Conference<br>On <span>Computational</span> Social Science</h1>
+	    <h1 class="mb-4 pb-0"><span>{{ site.title }}</span>{{ site.year}}<br>2nd Conference<br>On <span>Computational</span> Social Science</h1>
 	    <p class="mb-4 pb-0">{{ site.organizers }}</p>
 	    <p class="mb-4 pb-0">{{ site.datelocation }}</p>
       <a href="#about" class="about-btn scrollto">About the Conference</a>
@@ -159,11 +159,8 @@
 	        	<h2>Invited Speakers</h2>
 	             	<p>{{ site.speakers_intro }}</p>
 	        </div>
-    <div class="section-header">
-	        	<h4>Inaugural Address</h4>
-            <p>Alessandro Vespignani, Northeastern University and ISI Foundation</p>
-	        </div>
-	    <!-- <div class="row d-flex justify-content-center align-items-center"> -->
+  
+	    <!-- <div class="row d-flex justify-content-center align-items-center"> 
 	      	<div class="row d-flex justify-content-center align-items-center">
 	        {% for speaker in site.data.speakers %}
 	        {% if speaker.name %}
@@ -182,9 +179,9 @@
 	                    </div>
 	                </div>
 	                </div>
-	            </div><!-- End Team Member -->
+	            </div><!-- End Team Member
 	        {% endif %}
-	        {% endfor %}
+	        {% endfor %} -->
 	    </div>
 	</div>
 	</section><!-- /Speakers Section -->
@@ -196,34 +193,32 @@
         <div class="section-header">
           <h2>Program</h2>
         </div>
-        <div class="section-header">
+        <!--<div class="section-header">
           <h4>The detailed program of the parallel sessions is <a href="https://drive.google.com/file/d/1LBWzoebdQnHHph6TRxum_6dYglprmzM9/view?usp=sharing"> available here</a>.</h4>
         </div>
-        <!--<div class="section-header">
+        <div class="section-header">
           <h4>The draft statute of the Society for Computational Social Science Italy is <a href="https://drive.google.com/file/d/1pGcIJY4FzmYv5VKMsmp0VWcc4yccmcnO/view?usp=sharing"> available here</a>.</h4>
         </div>-->
         <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
           <li class="nav-item">
-            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Tutorials</a>
+            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Conference Day 1</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Conference Day 1</a>
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Conference Day 2</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Conference Day 2</a>
+            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Conference Day 3</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#day-4" role="tab" data-bs-toggle="tab">Conference Day 3</a>
-          </li>
+          
         </ul>
 
-        <h3 class="sub-heading">All times below are <a href="https://time.is/Trento">CET.</a></h3>
+        <h3 class="sub-heading">All times below are <a href="https://time.is/Torino">CET.</a></h3>
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <!-- Schedule Day 1 -->
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-            <h2>Tutorials in parallel sessions</h2>
-            <h3>(Wednesday, 15 January 2025)</h3>
+            <h2>Main conference</h2>
+            <h3>TBA</h3>
             {% for day1 in site.data.program_day1 %}
             <div class="row schedule-item">
               <div class="col-md-2"><time>{{ day1.schedule }}</time></div>
@@ -241,7 +236,7 @@
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
 
             <h2>Main Conference</h2>
-            <h3>(Thursday, 16 January 2025)</h3>
+            <h3>TBA</h3>
         
                   <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
              {% for day2 in site.data.program_day2 %}
@@ -262,7 +257,7 @@
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
 
             <h2>Main Conference</h2>
-            <h3>(Friday, 17 January 2025)</h3>
+            <h3>TBA</h3>
         
                   <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-3">
              {% for day3 in site.data.program_day3 %}
@@ -279,7 +274,7 @@
           </div>
           <!-- End Schedule Day 3 -->
 
-          <!-- Schedule Day4 -->
+          <!-- Schedule Day4 
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
 
             <h2>Establishment of the Society for Computational Social Science Italy</h2>
@@ -298,7 +293,7 @@
             </div>
 
           </div>
-          <!-- End Schedule Day 4 -->
+           End Schedule Day 4 -->
 
 
         </div>
@@ -306,7 +301,7 @@
       </div>
 
     </section><!-- End Schedule Section -->
-    <!-- ======= Tutorials section ====== -->
+    <!-- ======= Tutorials section ====== 
     <section id="tutorials">
 	<div class="container" data-aos="fade-up">
         	<div class="section-header">
@@ -316,7 +311,7 @@
           {% if page.tutorials %} {% capture tutorials %}{% include_relative _texts/{{ page.tutorials }}%}{% endcapture %} {{ tutorials | markdownify }} {% endif %}
         </div>
 	</div>
-    </section>
+    </section>-->
     <!-- ======= Registration Section ======= -->
     <section id="registrationfees" class="section-with-bg">
       <div class="container" data-aos="fade-up">
@@ -368,14 +363,12 @@
 
         <div class="row g-0">
           <div class="col-lg-6 venue-map">
-<iframe width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/it/map/cs2italy_1043580?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false#13/46.0685/11.1063"></iframe>
-	  </div>
-
-          <div class="col-lg-6 venue-info">
+            <iframe width="100%" height="300px" frameborder="0" allowfullscreen allow="geolocation" src="https://umap.openstreetmap.fr/en/map/cs2italy2026_1305536?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false#13/45.0659/7.682"></iframe>
+            <div class="col-lg-6 venue-info">
             <div class="row justify-content-center">
               <div class="col-11 col-lg-8 position-relative">
-                <h3><a href="https://www.sociologia.unitn.it/en">Department of Sociology and Social Research</a><br>Trento, Italy</h3>
-                <p>Via Giuseppe Verdi 26, Trento</p>
+                <h3><a href="https://ogrtorino.it/">OGR</a><br>Torino, Italy</h3>
+                <p>Corso Castelfidardo 22, 10128 Torino</p>
               </div>
             </div>
           </div>
@@ -387,30 +380,30 @@
         <div class="row g-0">
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento1.jpg" class="glightbox" data-gall="venue-gallery" data-title="Piazza Duomo by Enrico Celesti">
-                <img src="assets/img/gallery/trento1.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/torino1.jpg" class="glightbox" data-gall="venue-gallery" data-title="Vista dal Monte dei Cappuccini">
+                <img src="assets/img/gallery/torino1.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento2.jpg" class="glightbox" data-gall="venue-gallery"  data-title="MuSE by ESA"></a>
-                <img src="assets/img/gallery/trento2.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/torino2.jpg" class="glightbox" data-gall="venue-gallery"  data-title="La Gran Madre di Dio"></a>
+                <img src="assets/img/gallery/torino2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento3.jpg" class="glightbox" data-gall="venue-gallery" data-title="Loggia in Buonconsiglio Castle by Carolyn Derstine">
-                <img src="assets/img/gallery/trento3.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/torino3.jpg" class="glightbox" data-gall="venue-gallery" data-title="Piazza Castello">
+                <img src="assets/img/gallery/torino3.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento4.jpg" class="glightbox" data-gall="venue-gallery"  data-title="Piedicastello by Roberto Zanin"></a>
-                <img src="assets/img/gallery/trento4.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/torino4.jpg" class="glightbox" data-gall="venue-gallery"  data-title="Via Roma"></a>
+                <img src="assets/img/gallery/torino4.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -425,7 +418,7 @@
       <br>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Organizers</h2>
+          <h2>General Chairs</h2>
         </div>
         <div class="row">
       {% for organizer in site.data.organizers %}
@@ -446,7 +439,7 @@
     {% if count > 0 %}
       <div class="container section-white-bg" data-aos="fade-up">
         <div class="section-header">
-          <h2>Scientific Committee</h2>
+          <h2>Local Organizing Committee</h2>
         </div>
         <div class="row">
       {% for member in site.data.scientific_committee %}
@@ -477,9 +470,9 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.trento.info/en/home" target="new">About Trento</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visittrentino.info/en" target="_new">Visit Trentino</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.iltrentinodeibambini.it/" target="_new">Family Activities</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://turismotorino.org/en" target="new">About Torino</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitpiemonte.com/" target="_new">Visit Piemonte</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://turismotorino.org/en/visit/things-to-do-and-things-to-see/torino-with-kids" target="_new">Family Activities</a></li>
               <li><i class="bi bi-chevron-right"></i> <a onclick="showCookieBanner()">Cookie Policy</a></li>
             </ul>
           </div>
@@ -488,7 +481,7 @@
             <h4>Contact Us</h4>
             <p>
               CS2Italy<br/>Organization Committee <br>
-              Trento<br>
+              Torino<br>
               Italy <br>
               <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ site.email }}</a><br>
             </p>
