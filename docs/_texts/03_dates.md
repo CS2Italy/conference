@@ -5,8 +5,8 @@ Early-bird registration deadline: April 15, 2026<br/>
 Registrations close: May 14, 2026<br/>
 
 <h3>Abstract submission instructions</h3>
-<b>TBA</b><br/>
+<b>Coming soon...</b><br/>
 
 
 <h3>Conference dates</h3>
-<b>Conference days:</b>May 19-21, 2026<br/>
+<b>Conference days:</b> May 19-21, 2026<br/>
