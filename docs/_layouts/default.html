@@ -490,6 +490,24 @@
         </div>
       </div>
       <br><br>
+      {% assign count = site.data.steering_committee | size %}
+      {% if count > 0 %}
+        <div class="container section-white-bg" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Steering Committee of the Society</h2>
+          </div>
+          <div class="row">
+        {% for member in site.data.steering_committee %}
+            <div class="col-lg-3 col-md-4">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+                <span class="member">{{ member.name }}</span><br/>{{ member.affiliation }}
+                </div>
+              </div>
+        {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+        </div>
     {% assign count = site.data.scientific_committee | size %}
     {% if count > 0 %}
       <div class="container section-white-bg" data-aos="fade-up">
