@@ -315,7 +315,7 @@
     </section>-->
     <!-- ======= Registration Section ======= -->
     <section id="registrationfees" class="section-with-bg">
-      <div class="container" data-aos="fade-up">
+      <div class="container section-white-bg"" data-aos="fade-up">
         <div class="section-header">
           <h2>Registration</h2>
         </div>
@@ -433,6 +433,25 @@
     <!-- ======= Organizers Section ======= -->
     <section id="organizers">
       <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>General Chairs</h2>
+        </div>
+        <div class="row">
+      {% for organizer in site.data.organizers %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <div class="details">
+               <big><a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a></big><br/>
+               {{ organizer.affiliation }}
+               </div>
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
+      <br><br>
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>General Chairs</h2>
