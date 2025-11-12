@@ -11,7 +11,7 @@ The submission should include a title, author names and affiliations, and an ext
 
 Submissions will be non-archival, and thus the presented work can be already published, in preparation for publication elsewhere, or ongoing research. Abstracts will be reviewed by multiple members of a Program Committee composed of experts in computational social science. The accepted contributions will be selected for one of the following presentations:  a lightning talk (~6 mins) in a plenary session, or an oral presentation in parallel tracks (~15 mins). Lightning talks will be preferentially assigned to those requesting this form of presentation at submission and to early career researchers. In order to be included in the program, at least one of the authors must register for the conference by the early-bird registration deadline.
 
-Submission link: **[coming soon]**
+Submission link: **A CMT submission link will be coming shortly**
 
 
 <h3>Conference dates</h3>
