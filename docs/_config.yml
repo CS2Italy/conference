@@ -1,7 +1,9 @@
 title: CS2Italy
 email: cs2italy@gmail.com
 description:  # this means to ignore newlines until "baseurl:"
-  Join the premier CS2 Italy Conference, a pivotal event for computational social scientists in Italy and internationally. Scheduled for 2026, this conference will feature interdisciplinary collaboration among experts in economics, sociology, psychology, network science and more. \n The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+  Join the premier CS2 Italy Conference, a pivotal event for computational social scientists in Italy and internationally. Scheduled for 2026, this conference will feature interdisciplinary collaboration among experts in economics, sociology, psychology, network science and more. 
+  
+  The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
 keywords: conference, cs2italy, computational social science, torino, italy, fondazione isi
 year: 2026
 datelocation: 19-21 May 2026 - Torino, Italy
