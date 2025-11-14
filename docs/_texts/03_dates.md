@@ -4,6 +4,9 @@ Notification of abstract acceptance: March 1, 2026<br/>
 Early-bird registration deadline: April 15, 2026<br/>
 Registrations close: May 14, 2026<br/>
 
+<h3>Conference dates</h3>
+<b>Conference days:</b> May 19-21, 2026<br/>
+
 <h3>Abstract submission instructions</h3>
 Submissions are in the form of extended abstracts (max 2 pages) in PDF format, formatted according to the **official [LaTex](https://drive.google.com/file/d/15maGbb34Hjq3aWZoXgmW9JVPWj5t1803/view?usp=sharing) or [MS Word](https://www.dropbox.com/scl/fi/8gv3h2b7dk7bw6hnep96e/cs2italy_2026_word_template.docx?rlkey=ldbml0427n4oh2p5cx9lpid4t&dl=0) template**. 
 
@@ -14,5 +17,3 @@ Submissions will be non-archival, and thus the presented work can be already pub
 Submission link: **A Microsoft CMT submission link will be coming shortly**
 
 
-<h3>Conference dates</h3>
-<b>Conference days:</b> May 19-21, 2026<br/>
