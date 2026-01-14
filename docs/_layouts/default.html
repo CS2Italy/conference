@@ -509,22 +509,22 @@
         </div>
     {% assign count = site.data.scientific_committee | size %}
     {% if count > 0 %}
-      <div class="container section-white-bg" data-aos="fade-up">
-        <div class="section-header">
-          <h2>Scientific Committee</h2>
-        </div>
-        <div class="row">
-      {% for member in site.data.scientific_committee %}
-          <div class="col-lg-3 col-md-4">
-            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <span class="member">{{ member.name }}</span><br/>{{ member.affiliation }}
-              </div>
-            </div>
-      {% endfor %}
+    <div class="container section-white-bg" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Program Committee</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p style="font-size: 0.85em; line-height: 1.6; text-align: center;">
+            {% for member in site.data.scientific_committee %}
+              {{ member.name }}{% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+          </p>
         </div>
       </div>
+    </div>
     {% endif %}
-      </div>
+    </div>
     </section><!-- End Organizers Section -->
 
 

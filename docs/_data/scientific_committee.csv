@@ -1,1 +1,209 @@
-name,affiliation,location
+﻿first;last;name;affiliation
+Luca Maria;Aiello;Luca Maria Aiello;IT University of Copenhagen
+Antoine;Allard;Antoine Allard;Universit√© Laval
+Alessia;Antelmi;Alessia Antelmi;University of Turin
+Pablo;Balenzuela;Pablo Balenzuela;Departamento de F√≠sica, FCEyN,Universidad de Buenos Aires
+Stefano;Balietti;Stefano Balietti;UniMa
+Duilio;Balsamo;Duilio Balsamo;Bocconi University
+Federico;Bianchi;Federico Bianchi;University of Milan
+Elisabetta;Biondi;Elisabetta Biondi;IIT-CNR
+Riccardo;Boero;Riccardo Boero;NILU - the Climate and Environmental Research Institute
+Sebastiano;Bontorin;Sebastiano Bontorin;Fondazione Bruno Kessler
+Federico;Botta;Federico Botta;University of Exeter
+Chico;Camargo;Chico Camargo;University of Exeter
+Simone;Centellegher;Simone Centellegher;Fondazione Bruno Kessler
+Giovanni;Cerulli;Giovanni Cerulli;CNR
+Lorenzo;Cima;Lorenzo Cima;University of Pisa
+Matteo;Cinelli;Matteo Cinelli;Sapienza University of Rome
+Erica;Coppolillo;Erica Coppolillo;University of Calabria
+Michele;Coscia;Michele Coscia;ITU
+Marco;Cremonini;Marco Cremonini;Università di Milano
+Gabriele;D'Angelo;Gabriele D'Angelo;University of Bologna
+Antonio;Desiderio;Antonio Desiderio;Technical University of Denmark
+Niccolo;Di Marco;Niccolo Di Marco;Sapienza University of Rome
+Giovanna;Dimitri;Giovanna Dimitri;University of Siena 
+Max;Falkenberg;Max Falkenberg;Central European University
+Manuela;Farinosi;Manuela Farinosi;University of Udine
+Juan;Fernandez-Gracia;Juan Fernandez-Gracia;IFISC (CSIC-UIB)
+Alessandro;Galeazzi;Alessandro Galeazzi;Ca' Foscari University of Venice
+Yérali;Gandica;Yérali Gandica;Valencian International University
+Floriana;Gargiulo;Floriana Gargiulo;CNRS
+Giampiero;Giacomllo;Giampiero Giacomllo;University of Bologna
+Fabio;Giglietto;Fabio Giglietto;Universit√† di Urbino Carlo Bo
+Nicolò;Gozzi;Nicolò Gozzi;ISI Foundation
+Thilo;Gross;Thilo Gross;HIFMB
+Stefano;Guarino;Stefano Guarino;Consiglio Nazionale delle Ricerche
+Roberto;Interdonato;Roberto Interdonato;CIRAD
+Andreas;Kaltenbrunner;Andreas Kaltenbrunner;Universitat Obera de Catalunya
+Teruyoshi;Kobayashi;Teruyoshi Kobayashi;Kobe University
+Krzysztof;Krakowski;Krzysztof Krakowski;King's College London
+Lucio;La Cava;Lucio La Cava;University of Calabria
+Edward;Lee;Edward Lee;Complexity Science Hub Vienna
+Giacomo;Livan;Giacomo Livan;Universit√† di Pavia
+Mariana;Macedo;Mariana Macedo;Northeastern University London
+Gianluca;Manzo;Gianluca Manzo;Sorbonne University
+Manuel Sebastian;Mariani;Manuel Sebastian Mariani;University of Zurich
+Mattia;Mazzoli;Mattia Mazzoli;ISI Foundation
+Sandro;Meloni;Sandro Meloni;IFISC - CSIC
+Radoslaw;Michalski;Radoslaw Michalski;Wroclaw University of Science and Technology
+Elena;Morotti;Elena Morotti;University of Bologna
+Vittorio;Nespeca;Vittorio Nespeca;Leiden University 
+Elisa;Omodei;Elisa Omodei;Central European University
+Diogo;Pacheco;Diogo Pacheco;University of Exeter
+Luca;Pappalardo;Luca Pappalardo;ISTI
+Nicola;Perra;Nicola Perra;University of Greenwich
+Daniela;Perrotta;Daniela Perrotta;Max Planck Institute for Demographic Research
+Flavio;Pinheiro;Flavio Pinheiro;
+Alessandro ;Pluchino;Alessandro  Pluchino;University of Catania
+Chiara;Poletto;Chiara Poletto;University of Padova
+Giancarlo;Ragozini;Giancarlo Ragozini;University of Naples Federico II
+Andrea;Rapisarda;Andrea Rapisarda;University of Catania 
+Francesco;Renzini;Francesco Renzini;University of Milan
+Luis E C;Rocha;Luis E C Rocha;Ghent University
+Anna;Sapienza;Anna Sapienza;University of Copenhagen
+Alessandro;Sciullo;Alessandro Sciullo;University of Turin
+Albert;Solé-Ribalta;Albert Solé-Ribalta;Universitat Oberta de Catalunya
+David;Soriano-Panos;David Soriano-Panos;Universitat Rovira i Virgili
+Guillaume;St-Onge;Guillaume St-Onge;Northeastern University
+Massimo;Stella;Massimo Stella;University of Trento
+Michele;Tizzoni;Michele Tizzoni;University of Trento
+Sara;Tonelli;Sara Tonelli;Fondazione Bruno Kessler
+Marco;Tonin;Marco Tonin;University of Trento, Fondazione Bruno Kessler
+Natkamon;Tovanich;Natkamon Tovanich;TU Wien
+Alessandra;Urbinati;Alessandra Urbinati;Northeastern University
+Raffaele;Vacca;Raffaele Vacca;University of Milan
+Davide;Vega;Davide Vega;Uppsala University
+Giuseppe;Veltri;Giuseppe Veltri;National University of Singapore
+Daniele;Vilone;Daniele Vilone;ISTC-CNR
+Maria;Vitale;Maria Vitale;University of Salerno
+Antonio ;Zinilli ;Antonio  Zinilli ;National Research Council 
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
+;; ;
