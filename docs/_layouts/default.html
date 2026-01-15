@@ -67,11 +67,11 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#home">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">The Conference</a></li>
+          {% if count_speakers > 0 %}
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          {% endif %}
           <li><a class="nav-link scrollto" href="#cfp">Topics</a></li>
           <li><a class="nav-link scrollto" href="#dates">Submit</a></li>
-	  {% if count_speakers > 0 %}
-          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-	  {% endif %}
           <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
           <!--<li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>-->
           <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
