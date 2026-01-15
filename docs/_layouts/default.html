@@ -94,6 +94,7 @@
     </div>
   </section><!-- End Hero Section -->
 
+
   <main id="main">
     <section id="about">
       <div class="container position-relative" data-aos="fade-up">
@@ -116,6 +117,41 @@
         </div>
       </div>
     </section><!-- End About Section -->
+
+    {% if count_speakers > 0 %}
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+     <div class="container section-title" data-aos="fade-up">
+       <div class="section-header">
+               <h2>Invited Speakers</h2>
+                    <p>{{ site.speakers_intro }}</p>
+             </div>
+     
+         <div class="row d-flex justify-content-center align-items-stretch"> 
+             {% for speaker in site.data.speakers %}
+             {% if speaker.name %}
+                 <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                     <div class="member">
+                     <img src="assets/img/speakers/{{ speaker.picture }}" class="img-fluid" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                     <div class="member-info">
+                         <div class="member-info-content">
+                         <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
+                         <span>{{ speaker.affiliation }}</span>
+                         </div>
+                         <div class="social">
+                             <p><em>{{ speaker.schedule }}</em></p>
+                             <p><strong>{{ speaker.title }}</strong></p>
+                             <p>{{ speaker.description }}</p>
+                         </div>
+                     </div>
+                     </div>
+                 </div><!-- End Team Member-->
+             {% endif %}
+             {% endfor %} 
+         </div>
+     </section>
+    <!-- /Speakers Section -->
+ {% endif %}
 
     <!-- ======= CfP Section ======= -->
     <section id="cfp">
@@ -151,40 +187,6 @@
 	</div>
     </section><!-- End Topics Section -->
 
-   {% if count_speakers > 0 %}
-   <!-- ======= Speakers Section ======= -->
-   <section id="speakers">
-    <div class="container section-title" data-aos="fade-up">
-      <div class="section-header">
-              <h2>Invited Speakers</h2>
-                   <p>{{ site.speakers_intro }}</p>
-            </div>
-    
-        <div class="row d-flex justify-content-center align-items-stretch"> 
-            {% for speaker in site.data.speakers %}
-            {% if speaker.name %}
-                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="member">
-                    <img src="assets/img/speakers/{{ speaker.picture }}" class="img-fluid" alt="" style="width: 300px; height: 300px; object-fit: cover;">
-                    <div class="member-info">
-                        <div class="member-info-content">
-                        <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
-                        <span>{{ speaker.affiliation }}</span>
-                        </div>
-                        <div class="social">
-                            <p><em>{{ speaker.schedule }}</em></p>
-                            <p><strong>{{ speaker.title }}</strong></p>
-                            <p>{{ speaker.description }}</p>
-                        </div>
-                    </div>
-                    </div>
-                </div><!-- End Team Member-->
-            {% endif %}
-            {% endfor %} 
-        </div>
-    </section>
-   <!-- /Speakers Section -->
-{% endif %}
 	  
      <!-- ======= Schedule Section ======= -->
      <section id="schedule" class="section-with-bg">
