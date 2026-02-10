@@ -1,6 +1,6 @@
 <h3>Conference deadlines</h3>
-Abstract submission: ~~January 15, 2026~~ January 30, 2026<br/>
-Notification of abstract acceptance: March 1, 2026<br/>
+Abstract submission: ~~January 30, 2026~~<br/>
+Notification of abstract acceptance: March 9, 2026<br/>
 Early-bird registration deadline: April 15, 2026<br/>
 Registrations close: May 14, 2026<br/>
 
