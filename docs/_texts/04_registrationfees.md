@@ -1,3 +1,15 @@
+**Registration is open**.  
+
+To register fill the registration form you find here: [LINK](https://www.isi.it/cs2italy/).
+
+<br/>
+* Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possible. 
+* To present their work, all speakers must register for CS2Italy and attend the conference in person.  
+* Registration fees are described below.   
+<br/>
+<br/>
+
+
 ## Early bird (until April 15, 2026)
 * Senior fee: €300
 * Post-doc fee: €200
