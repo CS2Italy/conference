@@ -146,8 +146,13 @@
                      </div>
                      </div>
                  </div><!-- End Team Member-->
-             {% endif %}
-             {% endfor %} 
+
+              <!-- FORCE NEW LINE AFTER 2 SPEAKERS -->
+              {% if forloop.index == 2 %}
+              <div class="w-100"></div>
+              {% endif %}
+            {% endif %}
+            {% endfor %} 
          </div>
      </section>
     <!-- /Speakers Section -->
