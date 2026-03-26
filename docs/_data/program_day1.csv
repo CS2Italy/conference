@@ -1,5 +1,5 @@
 schedule,session,title,place,speaker
-9:00 - 9:30,Welcome,
+9:00 - 9:30,,Welcome,,
 9:30 - 10:30,Keynote speech,Roberta Sinatra,,
 10:30 - 11:00,,Coffee Break,,
 11:00 - 12:00,Keynote speech,Alessandro Flammini,,
@@ -9,4 +9,4 @@ schedule,session,title,place,speaker
 15:00 - 15:45,,Highlighted Talks,,
 15:45 - 16:15,,Coffee Break,,
 16:15 - 17:00,,Highlighted Talks,,
-17:00 - ,Association Assembly,,
+17:00 - ,,Association Assembly,,
