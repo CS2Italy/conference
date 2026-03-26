@@ -127,8 +127,8 @@
                     <p>{{ site.speakers_intro }}</p>
              </div>
      
-         <div class="row d-flex justify-content-center align-items-stretch"> 
-             {% for speaker in site.data.speakers %}
+         <div class="row d-flex justify-content-center align-items-stretch">
+             {% for speaker in site.data.speakers limit:2 %}
              {% if speaker.name %}
                  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                      <div class="member">
@@ -146,13 +146,31 @@
                      </div>
                      </div>
                  </div><!-- End Team Member-->
+             {% endif %}
+             {% endfor %}
+         </div>
 
-              <!-- FORCE NEW LINE AFTER 2 SPEAKERS -->
-              {% if forloop.index == 2 %}
-              <div class="w-100"></div>
-              {% endif %}
-            {% endif %}
-            {% endfor %} 
+         <div class="row d-flex justify-content-center align-items-stretch mt-4">
+             {% for speaker in site.data.speakers offset:2 %}
+             {% if speaker.name %}
+                 <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                     <div class="member">
+                     <img src="assets/img/speakers/{{ speaker.picture }}" class="img-fluid" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                     <div class="member-info">
+                         <div class="member-info-content">
+                         <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
+                         <span>{{ speaker.affiliation }}</span>
+                         </div>
+                         <div class="social">
+                             <p><em>{{ speaker.schedule }}</em></p>
+                             <p><strong>{{ speaker.title }}</strong></p>
+                             <p>{{ speaker.description }}</p>
+                         </div>
+                     </div>
+                     </div>
+                 </div><!-- End Team Member-->
+             {% endif %}
+             {% endfor %}
          </div>
      </section>
     <!-- /Speakers Section -->
@@ -218,7 +236,7 @@
           
         </ul>
 
-        <h3 class="sub-heading">All times below are <a href="https://time.is/Torino">CET.</a></h3>
+        <h3 class="sub-heading">All times below are <a href="https://time.is/Torino">CEST.</a></h3>
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <!-- Schedule Day 1 -->
@@ -239,9 +257,6 @@
           <!-- Schedule Day 2 -->
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
 
-            <h2>Main Conference</h2>
-            <h3>TBA</h3>
-        
                   <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
              {% for day2 in site.data.program_day2 %}
             <div class="row schedule-item">
@@ -259,9 +274,6 @@
 
           <!-- Schedule Day3 -->
           <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-
-            <h2>Main Conference</h2>
-            <h3>TBA</h3>
         
                   <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-3">
              {% for day3 in site.data.program_day3 %}
