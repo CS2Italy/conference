@@ -1,4 +1,5 @@
-**Registration is closed**.  
+<p class="text-center"><strong>Registration is closed</strong>. <strong>We have reached the venue capacity, and the event is sold out</strong>.</p>
+
 <br/>
 * Please, note: CS2Italy is a in presence-only event. No hybrid or remote participation will be possible. 
 * To present their work, all speakers must register for CS2Italy and attend the conference in person.  
