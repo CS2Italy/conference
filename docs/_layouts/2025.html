@@ -1,3 +1,5 @@
+{% assign edition = site.data["2025"] %}
+{% assign conference = edition.conference %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,42 +9,42 @@
 	  <meta http-equiv="Pragma" content="no-cache">
 	  <meta http-equiv="Expires" content="0">
 	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-	  <title>{{ site.title }}</title>
-	  <meta content="{{ site.intro }}" name="description">
-	  <meta content="{{ site.keywords }}" name="keywords">
-	  <meta name="title" content="{{ site.title }}" />
-	  <meta name="description" content="{{ site.description }}" />
+	  <title>{{ conference.title }}</title>
+	  <meta content="{{ conference.intro }}" name="description">
+	  <meta content="{{ conference.keywords }}" name="keywords">
+	  <meta name="title" content="{{ conference.title }}" />
+	  <meta name="description" content="{{ conference.description }}" />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="{{ site.url }}" />
-	<meta property="og:title" content="{{ site.title }}" />
-	<meta property="og:description" content="{{ site.description }}" />
-	<meta property="og:image" content="{{ site.preview }}" />
+	<meta property="og:url" content="{{ page.url | absolute_url }}" />
+	<meta property="og:title" content="{{ conference.title }}" />
+	<meta property="og:description" content="{{ conference.description }}" />
+	<meta property="og:image" content="{{ conference.preview | absolute_url }}" />
 
 	<!-- Twitter -->
-	<meta property="twitter:card" content="{{ site.intro }}" />
-	<meta property="twitter:url" content="{{ site.url }}" />
-	<meta property="twitter:title" content="{{ site.title }}" />
-	<meta property="twitter:description" content="{{ site.description }}" />
-	<meta property="twitter:image" content="{{ site.preview }}" />
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="{{ page.url | absolute_url }}" />
+	<meta property="twitter:title" content="{{ conference.title }}" />
+	<meta property="twitter:description" content="{{ conference.description }}" />
+	<meta property="twitter:image" content="{{ conference.preview | absolute_url }}" />
 
 	
 	  <!-- Favicons -->
-	  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
-	  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-	  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-	  <link rel="manifest" href="asset/img/site.webmanifest">
+	  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/2025/assets/img/apple-touch-icon.png" | relative_url }}">
+	  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/2025/assets/img/favicon-32x32.png" | relative_url }}">
+	  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/2025/assets/img/favicon-16x16.png" | relative_url }}">
+	  <link rel="manifest" href="{{ "/2025/assets/img/site.webmanifest" | relative_url }}">
 
 	  <!-- Vendor CSS Files -->
-	  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-	  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-	  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-	  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-	  <link href="assets/vendor/bootstrap-cookie-banner/cookie-banner.css" rel="stylesheet">
+	  <link href="{{ "/2025/assets/vendor/aos/aos.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2025/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2025/assets/vendor/bootstrap-icons/bootstrap-icons.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2025/assets/vendor/glightbox/css/glightbox.min.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2025/assets/vendor/swiper/swiper-bundle.min.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2025/assets/vendor/bootstrap-cookie-banner/cookie-banner.css" | relative_url }}" rel="stylesheet">
 	  <!-- Template Main CSS File -->
-	  <link href="assets/css/style.css" rel="stylesheet">
+	  <link href="{{ "/2025/assets/css/style.css" | relative_url }}?v=2025-archive-1" rel="stylesheet">
 
 	  <!-- =======================================================
 	  * Template Name: TheEvent
@@ -52,7 +54,7 @@
 	  * License: https://bootstrapmade.com/license/
 	  ======================================================== -->
 </head>
-{% assign count_speakers = site.data.speakers | size %}
+{% assign count_speakers = edition.speakers | size %}
 
 <body>
   <!-- ======= Header ======= -->
@@ -60,7 +62,7 @@
     <div class="container-fluid container-xxl d-flex align-items-center">
 
       <div id="logo" class="me-auto">
-        <a href="index.html" class="scrollto"><img src="assets/img/logo.svg" alt="" title=""></a>
+        <a href="{{ "/2025/" | relative_url }}" class="scrollto"><img src="{{ "/2025/assets/img/logo.svg" | relative_url }}" alt="" title=""></a>
       </div>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
@@ -87,9 +89,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="home">
     <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
-	    <h1 class="mb-4 pb-0"><span>{{ site.title }}</span>{{ site.year}}<br>1st Conference<br>On <span>Computational</span> Social Science</h1>
-	    <p class="mb-4 pb-0">{{ site.organizers }}</p>
-	    <p class="mb-4 pb-0">{{ site.datelocation }}</p>
+	    <h1 class="mb-4 pb-0"><span>{{ conference.title }}</span>{{ conference.year}}<br>1st Conference<br>On <span>Computational</span> Social Science</h1>
+	    <p class="mb-4 pb-0">{{ conference.organizers }}</p>
+	    <p class="mb-4 pb-0">{{ conference.datelocation }}</p>
       <a href="#about" class="about-btn scrollto">About the Conference</a>
     </div>
   </section><!-- End Hero Section -->
@@ -104,15 +106,15 @@
           </div>
           <div class="col-lg-3">
             <h3>Where</h3>
-            <p>{{ site.where }}</p>
+            <p>{{ conference.where }}</p>
           </div>
           <div class="col-lg-3">
             <h3>When</h3>
-            <p>{{ site.when }}</p>
+            <p>{{ conference.when }}</p>
           </div>
         </div>
         <div class="row">
-          {{ site.intro }}
+          {{ conference.intro }}
         </div>
       </div>
     </section><!-- End About Section -->
@@ -149,6 +151,7 @@
                 </div>
                 <div class="col-lg-1">&nbsp;</div>
 	</div>
+      </div>
     </section><!-- End Topics Section -->
 
    {% if count_speakers > 0 %}
@@ -157,7 +160,7 @@
 	<div class="container section-title" data-aos="fade-up">
 		<div class="section-header">
 	        	<h2>Invited Speakers</h2>
-	             	<p>{{ site.speakers_intro }}</p>
+	             	<p>{{ conference.speakers_intro }}</p>
 	        </div>
     <div class="section-header">
 	        	<h4>Inaugural Address</h4>
@@ -165,11 +168,11 @@
 	        </div>
 	    <!-- <div class="row d-flex justify-content-center align-items-center"> -->
 	      	<div class="row d-flex justify-content-center align-items-center">
-	        {% for speaker in site.data.speakers %}
+	        {% for speaker in edition.speakers %}
 	        {% if speaker.name %}
 	            <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
 	                <div class="member">
-	                <img src="assets/img/speakers/{{ speaker.picture }}" class="img-fluid" alt="">
+	                <img src="{{ "/2025/assets/img/speakers/" | append: speaker.picture | relative_url }}" class="img-fluid" alt="">
 	                <div class="member-info">
 	                    <div class="member-info-content">
 	                    <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
@@ -224,7 +227,7 @@
           <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
             <h2>Tutorials in parallel sessions</h2>
             <h3>(Wednesday, 15 January 2025)</h3>
-            {% for day1 in site.data.program_day1 %}
+            {% for day1 in edition.program_day1 %}
             <div class="row schedule-item">
               <div class="col-md-2"><time>{{ day1.schedule }}</time></div>
               <div class="col-md-10">
@@ -242,9 +245,7 @@
 
             <h2>Main Conference</h2>
             <h3>(Thursday, 16 January 2025)</h3>
-        
-                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
-             {% for day2 in site.data.program_day2 %}
+             {% for day2 in edition.program_day2 %}
             <div class="row schedule-item">
               <div class="col-md-2"><time>{{ day2.schedule }}</time></div>
               <div class="col-md-10">
@@ -253,7 +254,6 @@
               </div>
             </div>
             {% endfor %}
-            </div>
 
           </div>
           <!-- End Schedule Day 2 -->
@@ -263,9 +263,7 @@
 
             <h2>Main Conference</h2>
             <h3>(Friday, 17 January 2025)</h3>
-        
-                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-3">
-             {% for day3 in site.data.program_day3 %}
+             {% for day3 in edition.program_day3 %}
 	            <div class="row schedule-item">
 	              <div class="col-md-2"><time>{{ day3.schedule }}</time></div>
 	              <div class="col-md-10">
@@ -274,7 +272,6 @@
 	              </div>
 	            </div>
              {% endfor %}
-            </div>
 
           </div>
           <!-- End Schedule Day 3 -->
@@ -284,9 +281,7 @@
 
             <h2>Establishment of the Society for Computational Social Science Italy</h2>
             <h3>(Saturday, 18 January 2025)</h3>
-        
-                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-4">
-             {% for day4 in site.data.program_day4%}
+             {% for day4 in edition.program_day4%}
 	            <div class="row schedule-item">
 	              <div class="col-md-2"><time>{{ day4.schedule }}</time></div>
 	              <div class="col-md-10">
@@ -295,7 +290,6 @@
 	              </div>
 	            </div>
              {% endfor %}
-            </div>
 
           </div>
           <!-- End Schedule Day 4 -->
@@ -340,11 +334,11 @@
             </div>
     
             <div class="row g-0 supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-              {% for sponsors in site.data.sponsors %}
+              {% for sponsors in edition.sponsors %}
               <!-- name,url,logo,category -->
               <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="supporter-logo">
-                  <a  href="{{ sponsors.url }}" target="_new"><img src="assets/img/supporters/{{ sponsors.logo }}" class="img-fluid" alt=""></a>
+                  <a  href="{{ sponsors.url }}" target="_new"><img src="{{ "/2025/assets/img/supporters/" | append: sponsors.logo | relative_url }}" class="img-fluid" alt=""></a>
                 </div>
               </div>
               {% endfor %}
@@ -387,30 +381,30 @@
         <div class="row g-0">
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="/assets/img/gallery/trento1.jpg" class="glightbox" data-gall="venue-gallery" data-title="Piazza Duomo by Enrico Celesti">
-                <img src="/assets/img/gallery/trento1.jpg" alt="" class="img-fluid">
+              <a href="{{ "/2025/assets/img/gallery/trento1.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery" data-title="Piazza Duomo by Enrico Celesti">
+                <img src="{{ "/2025/assets/img/gallery/trento1.jpg" | relative_url }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento2.jpg" class="glightbox" data-gall="venue-gallery"  data-title="MuSE by ESA"></a>
-                <img src="assets/img/gallery/trento2.jpg" alt="" class="img-fluid">
+              <a href="{{ "/2025/assets/img/gallery/trento2.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery"  data-title="MuSE by ESA">
+                <img src="{{ "/2025/assets/img/gallery/trento2.jpg" | relative_url }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento3.jpg" class="glightbox" data-gall="venue-gallery" data-title="Loggia in Buonconsiglio Castle by Carolyn Derstine">
-                <img src="assets/img/gallery/trento3.jpg" alt="" class="img-fluid">
+              <a href="{{ "/2025/assets/img/gallery/trento3.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery" data-title="Loggia in Buonconsiglio Castle by Carolyn Derstine">
+                <img src="{{ "/2025/assets/img/gallery/trento3.jpg" | relative_url }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="venue-gallery">
-              <a href="assets/img/gallery/trento4.jpg" class="glightbox" data-gall="venue-gallery"  data-title="Piedicastello by Roberto Zanin"></a>
-                <img src="assets/img/gallery/trento4.jpg" alt="" class="img-fluid">
+              <a href="{{ "/2025/assets/img/gallery/trento4.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery"  data-title="Piedicastello by Roberto Zanin">
+                <img src="{{ "/2025/assets/img/gallery/trento4.jpg" | relative_url }}" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -428,10 +422,10 @@
           <h2>Organizers</h2>
         </div>
         <div class="row">
-      {% for organizer in site.data.organizers %}
+      {% for organizer in edition.organizers %}
           <div class="col-lg-3 col-md-4">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
-              <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <!--<img src="{{ "/2025/assets/img/organizers/" | append: organizer.picture | relative_url }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
               <div class="details">
                <big><a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a></big><br/>
                {{ organizer.affiliation }}
@@ -442,14 +436,14 @@
         </div>
       </div>
       <br><br>
-    {% assign count = site.data.scientific_committee | size %}
+    {% assign count = edition.scientific_committee | size %}
     {% if count > 0 %}
       <div class="container section-white-bg" data-aos="fade-up">
         <div class="section-header">
           <h2>Scientific Committee</h2>
         </div>
         <div class="row">
-      {% for member in site.data.scientific_committee %}
+      {% for member in edition.scientific_committee %}
           <div class="col-lg-3 col-md-4">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <span class="member">{{ member.name }}</span><br/>{{ member.affiliation }}
@@ -459,7 +453,6 @@
         </div>
       </div>
     {% endif %}
-      </div>
     </section><!-- End Organizers Section -->
 
 
@@ -471,8 +464,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 footer-info">
-            <img src="assets/img/logo_cs2italy.png" alt="CS2Italy">
-            <p>{{ site.description }}</p>
+            <img src="{{ "/2025/assets/img/logo_cs2italy.png" | relative_url }}" alt="CS2Italy">
+            <p>{{ conference.description }}</p>
           </div>
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
@@ -490,7 +483,7 @@
               CS2Italy<br/>Organization Committee <br>
               Trento<br>
               Italy <br>
-              <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ site.email }}</a><br>
+              <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ conference.email }}</a><br>
             </p>
             <!--
             <div class="social-links">
@@ -536,14 +529,14 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script async src="assets/vendor/bootstrap-cookie-banner/cookie-banner.js"></script>
+  <script src="{{ "/2025/assets/vendor/aos/aos.js" | relative_url }}"></script>
+  <script src="{{ "/2025/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
+  <script src="{{ "/2025/assets/vendor/glightbox/js/glightbox.min.js" | relative_url }}"></script>
+  <script src="{{ "/2025/assets/vendor/swiper/swiper-bundle.min.js" | relative_url }}"></script>
+  <script async src="{{ "/2025/assets/vendor/bootstrap-cookie-banner/cookie-banner.js" | relative_url }}"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ "/2025/assets/js/main.js" | relative_url }}"></script>
 
 </body>
 

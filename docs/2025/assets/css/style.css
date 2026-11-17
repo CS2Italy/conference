@@ -842,7 +842,9 @@ h6 {
 #schedule .nav-tabs {
   text-align: center;
   margin: auto;
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
   border-bottom: 0;
   margin-bottom: 30px;
 }
@@ -858,24 +860,16 @@ h6 {
   font-weight: 600;
   background-color: #0e1b4d;
   color: #fff;
-  padding: 10px 100px;
-}
-
-@media (max-width: 991px) {
-  #schedule .nav-tabs a {
-    padding: 8px 60px;
-  }
+  padding: 10px 12px;
 }
 
 @media (max-width: 767px) {
-  #schedule .nav-tabs a {
-    padding: 8px 50px;
+  #schedule .nav-tabs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
-@media (max-width: 480px) {
   #schedule .nav-tabs a {
-    padding: 8px 30px;
+    padding: 8px 12px;
   }
 }
 
