@@ -39,3 +39,9 @@ pay attention to the category section: platinum, gold, silver, bronze
 ```bash
  name,url,logo,category
 ```
+## venue_gallery.csv
+the photos of the venue shown below the map\
+the pictures are stored in assets/img/gallery/ and a row is shown only once its picture is there
+```bash
+file,title
+```

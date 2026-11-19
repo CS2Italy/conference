@@ -2,12 +2,12 @@ title: CS2Italy
 email: cs2italy@gmail.com
 description:  # this means to ignore newlines until "baseurl:"
   The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
-keywords: conference, cs2italy, computational social science, torino, italy, fondazione isi
-year: 2026
-datelocation: 19-21 May 2026 - Torino, Italy
-when: Tuesday to Thursday 19-21 May 2026
-where: OGR Torino, Italy
-organizers: OGR Torino 
+keywords: conference, cs2italy, computational social science, rome, italy, cnr
+year: 2027
+datelocation: 24-25 May 2027 - Rome, Italy
+when: Monday to Tuesday 24-25 May 2027
+where: Consiglio Nazionale delle Ricerche (CNR) Headquarters, Piazzale Aldo Moro 7, Rome, Italy
+organizers: Consiglio Nazionale delle Ricerche (CNR) Headquarters
 intro: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://cs2italy.org/" # the base hostname & protocol for your site, e.g. http://example.com

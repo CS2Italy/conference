@@ -1,0 +1,635 @@
+{% assign edition = site.data["2026"] %}
+{% assign conference = edition.conference %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	  <meta charset="utf-8">
+	  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	  <meta http-equiv="Pragma" content="no-cache">
+	  <meta http-equiv="Expires" content="0">
+	  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	  <title>{{ conference.title }}</title>
+	  <meta content="{{ conference.intro }}" name="description">
+	  <meta content="{{ conference.keywords }}" name="keywords">
+	  <meta name="title" content="{{ conference.title }}" />
+	  <meta name="description" content="{{ conference.description }}" />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ page.url | absolute_url }}" />
+	<meta property="og:title" content="{{ conference.title }}" />
+	<meta property="og:description" content="{{ conference.description }}" />
+	<meta property="og:image" content="{{ conference.preview | absolute_url }}" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="{{ page.url | absolute_url }}" />
+	<meta property="twitter:title" content="{{ conference.title }}" />
+	<meta property="twitter:description" content="{{ conference.description }}" />
+	<meta property="twitter:image" content="{{ conference.preview | absolute_url }}" />
+
+
+	  <!-- Favicons -->
+	  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/2026/assets/img/apple-touch-icon.png" | relative_url }}">
+	  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/2026/assets/img/favicon-32x32.png" | relative_url }}">
+	  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/2026/assets/img/favicon-16x16.png" | relative_url }}">
+	  <link rel="manifest" href="{{ "/2026/assets/img/site.webmanifest" | relative_url }}">
+
+	  <!-- Vendor CSS Files -->
+	  <link href="{{ "/2026/assets/vendor/aos/aos.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2026/assets/vendor/bootstrap/css/bootstrap.min.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2026/assets/vendor/bootstrap-icons/bootstrap-icons.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2026/assets/vendor/glightbox/css/glightbox.min.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2026/assets/vendor/swiper/swiper-bundle.min.css" | relative_url }}" rel="stylesheet">
+	  <link href="{{ "/2026/assets/vendor/bootstrap-cookie-banner/cookie-banner.css" | relative_url }}" rel="stylesheet">
+	  <!-- Template Main CSS File -->
+	  <link href="{{ "/2026/assets/css/style.css" | relative_url }}?v=2026-archive-1" rel="stylesheet">
+
+	  <!-- =======================================================
+	  * Template Name: TheEvent
+	  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+	  * Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+	  * Author: BootstrapMade.com
+	  * License: https://bootstrapmade.com/license/
+	  ======================================================== -->
+</head>
+{% assign count_speakers = edition.speakers | size %}
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto">
+        <a href="{{ "/2026/" | relative_url }}" class="scrollto"><img src="{{ "/2026/assets/img/logo.svg" | relative_url }}" alt="" title=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">The Conference</a></li>
+          {% if count_speakers > 0 %}
+          <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
+          {% endif %}
+          <li><a class="nav-link scrollto" href="#cfp">Topics</a></li>
+          <li><a class="nav-link scrollto" href="#dates">Submit</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
+          <!--<li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>-->
+          <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
+          <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organization</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="home">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+	    <h1 class="mb-4 pb-0"><span>{{ conference.title }}</span>{{ conference.year}}<br>The <span>Italian</span> Conference<br>On <span>Computational</span> Social Science</h1>
+	    <p class="mb-4 pb-0">{{ conference.organizers }}</p>
+	    <p class="mb-4 pb-0">{{ conference.datelocation }}</p>
+      <a href="#about" class="about-btn scrollto">About the Conference</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+
+  <main id="main">
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>About The Event</h2>
+            {% if page.about %} {% capture about %}{% include_relative _texts/{{ page.about }}%}{% endcapture %} {{ about | markdownify }} {% endif %}
+          </div>
+          <div class="col-lg-3">
+            <h3>Where</h3>
+            <p>{{ conference.where }}</p>
+          </div>
+          <div class="col-lg-3">
+            <h3>When</h3>
+            <p>{{ conference.when }}</p>
+          </div>
+        </div>
+        <div class="row">
+          {{ conference.intro }}
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    {% if count_speakers > 0 %}
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers" class="section-with-bg">
+     <div class="container section-title" data-aos="fade-up">
+       <div class="section-header">
+               <h2>Invited Speakers</h2>
+                    <p>{{ conference.speakers_intro }}</p>
+             </div>
+
+         <div class="row d-flex justify-content-center align-items-stretch">
+             {% for speaker in edition.speakers limit:2 %}
+             {% if speaker.name %}
+                 <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                     <div class="member">
+                     <img src="{{ "/2026/assets/img/speakers/" | append: speaker.picture | relative_url }}" class="img-fluid" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                     <div class="member-info">
+                         <div class="member-info-content">
+                         <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
+                         <span>{{ speaker.affiliation }}</span>
+                         </div>
+                         <div class="social">
+                             <p><em>{{ speaker.schedule }}</em></p>
+                             <p><strong>{{ speaker.title }}</strong></p>
+                             <p>{{ speaker.description }}</p>
+                         </div>
+                     </div>
+                     </div>
+                 </div><!-- End Team Member-->
+             {% endif %}
+             {% endfor %}
+         </div>
+
+         <div class="row d-flex justify-content-center align-items-stretch mt-4">
+             {% for speaker in edition.speakers offset:2 %}
+             {% if speaker.name %}
+                 <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                     <div class="member">
+                     <img src="{{ "/2026/assets/img/speakers/" | append: speaker.picture | relative_url }}" class="img-fluid" alt="" style="width: 300px; height: 300px; object-fit: cover;">
+                     <div class="member-info">
+                         <div class="member-info-content">
+                         <h4><a href="{{ speaker.website }}">{{ speaker.name }}</a></h4>
+                         <span>{{ speaker.affiliation }}</span>
+                         </div>
+                         <div class="social">
+                             <p><em>{{ speaker.schedule }}</em></p>
+                             <p><strong>{{ speaker.title }}</strong></p>
+                             <p>{{ speaker.description }}</p>
+                         </div>
+                     </div>
+                     </div>
+                 </div><!-- End Team Member-->
+             {% endif %}
+             {% endfor %}
+         </div>
+     </section>
+    <!-- /Speakers Section -->
+ {% endif %}
+
+    <!-- ======= CfP Section ======= -->
+    <section id="cfp">
+      <div class="container section-white-bg" data-aos="fade-up">
+        <div class="section-header">
+		<br/>
+		<h2>Topics</h2>
+        </div>
+	<div class="row">
+		<div class="col-lg-1">&nbsp;</div>
+			<div class="col-lg-10">
+			We welcome submissions on any topic in the field of computational social science, including but not limited to:
+			{% if page.topics %} {% capture topics %}{% include_relative _texts/{{ page.topics }}%}{% endcapture %} {{ topics | markdownify }} {% endif %}
+			</div>
+		<div class="col-lg-1">&nbsp;</div>
+	</div>
+      </div>
+    </section><!-- End CfP Section -->
+
+    <!-- ======= Submissions Section ======= -->
+    <section id="dates" class="section-with-bg">
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Abstract Submission & Important Dates</h2>
+        </div>
+	<div class="row">
+        	<div class="col-lg-1">&nbsp;</div>
+                <div class="col-lg-10">
+		{% if page.dates %} {% capture dates %}{% include_relative _texts/{{ page.dates }}%}{% endcapture %} {{ dates | markdownify }} {% endif %}
+                </div>
+                <div class="col-lg-1">&nbsp;</div>
+	</div>
+    </section><!-- End Topics Section -->
+
+
+     <!-- ======= Schedule Section ======= -->
+     <section id="schedule" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Program</h2>
+        </div>
+        <div class="section-header">
+          <h4>A detailed program of all conference sessions is <a href="https://docs.google.com/document/d/1r0MryZaCUAlysDaqIP5mxgc5TNVOCBvaye6CWw1xim0/edit?usp=sharing"> available here</a>.</h4>
+        </div>
+        <div class="section-header">
+          <h4>Directions to the venue and inside the venue are <a href="https://drive.google.com/file/d/1nsiGReFb6ojvzKjzHOst6DKlgyCDiH9W/view?usp=sharing"> available here</a>.</h4>
+        </div>
+        <!--<div class="section-header">
+          <h4>The draft statute of the Society for Computational Social Science Italy is <a href="https://drive.google.com/file/d/1pGcIJY4FzmYv5VKMsmp0VWcc4yccmcnO/view?usp=sharing"> available here</a>.</h4>
+        </div>-->
+        <ul class="nav nav-tabs" role="tablist" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active" href="#day-1" role="tab" data-bs-toggle="tab">Conference Day 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-2" role="tab" data-bs-toggle="tab">Conference Day 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#day-3" role="tab" data-bs-toggle="tab">Conference Day 3</a>
+          </li>
+
+        </ul>
+
+        <h3 class="sub-heading">All times below are <a href="https://time.is/Torino">CEST.</a></h3>
+
+        <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <!-- Schedule Day 1 -->
+          <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+            {% for day1 in edition.program_day1 %}
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>{{ day1.schedule }}</time></div>
+              <div class="col-md-10">
+		<h4>{{ day1.title }}&nbsp;<span>{{ day1.speaker }}</span></h4>
+                <p>{{ day1.session }}</p>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+          <!-- End Schdule Day 1 -->
+
+          <!-- Schedule Day 2 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+
+                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-2">
+             {% for day2 in edition.program_day2 %}
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>{{ day2.schedule }}</time></div>
+              <div class="col-md-10">
+		<h4>{{ day2.title }}<span>&nbsp;{{ day2.speaker }}</span></h4>
+                <p>{{ day2.session }}</p>
+              </div>
+            </div>
+            {% endfor %}
+            </div>
+
+          </div>
+          <!-- End Schedule Day 2 -->
+
+          <!-- Schedule Day3 -->
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+
+                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-3">
+             {% for day3 in edition.program_day3 %}
+	            <div class="row schedule-item">
+	              <div class="col-md-2"><time>{{ day3.schedule }}</time></div>
+	              <div class="col-md-10">
+			<h4>{{ day3.title }}&nbsp;<span>{{ day3.speaker }}</span></h4>
+	                <p>{{ day3.session }}</p>
+	              </div>
+	            </div>
+             {% endfor %}
+            </div>
+
+          </div>
+          <!-- End Schedule Day 3 -->
+
+          <!-- Schedule Day4
+          <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
+
+            <h2>Establishment of the Society for Computational Social Science Italy</h2>
+            <h3>(Saturday, 18 January 2025)</h3>
+
+                  <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-4">
+             {% for day4 in edition.program_day4%}
+	            <div class="row schedule-item">
+	              <div class="col-md-2"><time>{{ day4.schedule }}</time></div>
+	              <div class="col-md-10">
+			<h4>{{ day4.title }}&nbsp;<span>{{ day4.speaker }}</span></h4>
+	                <p>{{ day4.session }}</p>
+	              </div>
+	            </div>
+             {% endfor %}
+            </div>
+
+          </div>
+           End Schedule Day 4 -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- End Schedule Section -->
+    <!-- ======= Tutorials section ======
+    <section id="tutorials">
+	<div class="container" data-aos="fade-up">
+        	<div class="section-header">
+          		<h2>Tutorials</h2>
+        	</div>
+        <div class="row">
+          {% if page.tutorials %} {% capture tutorials %}{% include_relative _texts/{{ page.tutorials }}%}{% endcapture %} {{ tutorials | markdownify }} {% endif %}
+        </div>
+	</div>
+    </section>-->
+    <!-- ======= Registration Section ======= -->
+    <section id="registrationfees" class="section-with-bg">
+      <div class="container section-white-bg"" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Registration</h2>
+        </div>
+        <div class="row">
+          {% if page.registrationfees %} {% capture registrationfees %}{% include_relative _texts/{{ page.registrationfees }}%}{% endcapture %} {{ registrationfees | markdownify }} {% endif %}
+        </div>
+      </div>
+    </section><!-- End Registration Section -->
+
+<!-- ======= Supporters Section ======= -->
+    <section id="supporters">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Sponsors</h2>
+        </div>
+            <div class="row">
+              {% if page.sponsors %} {% capture sponsors %}{% include_relative _texts/{{ page.sponsors }}%}{% endcapture %} {{ sponsors | markdownify }} {% endif %}
+            </div>
+
+            <div class="row g-0 supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+              {% for sponsors in edition.sponsors %}
+              <!-- name,url,logo,category -->
+              <div class="col-lg-6 col-md-6 col-6">
+                <div class="supporter-logo">
+                  <a  href="{{ sponsors.url }}" target="_new"><img src="{{ "/2026/assets/img/supporters/" | append: sponsors.logo | relative_url }}" class="img-fluid" alt=""></a>
+                </div>
+              </div>
+              {% endfor %}
+
+            </div>
+
+          </div>
+
+        </section><!-- End Sponsors Section -->
+
+
+
+    <!-- ======= Venue Section ======= -->
+    <section id="venue" class="section-with-bg">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Venue</h2>
+        </div>
+
+          <div class="row g-0">
+
+            <!-- Map column -->
+            <div class="col-lg-6 venue-map">
+              <iframe width="100%" height="300px" loading="lazy" frameborder="0" allowfullscreen allow="geolocation"
+                src="https://umap.openstreetmap.fr/en/map/cs2italy2026_1305536?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false#13/45.0659/7.682">
+              </iframe>
+            </div>
+
+            <!-- Venue info column -->
+            <div class="col-lg-6 venue-info d-flex align-items-center">
+              <div class="row justify-content-center w-100">
+                <div class="col-11 col-lg-8 position-relative">
+                  <h3>
+                    <a href="https://ogrtorino.it/">OGR</a><br>
+                    Torino, Italy
+                  </h3>
+                  <p>Corso Castelfidardo 22, 10128 Torino</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-0">
+
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="{{ "/2026/assets/img/gallery/torino1.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery" data-title="Vista dal Monte dei Cappuccini">
+                  <img src="{{ "/2026/assets/img/gallery/torino1.jpg" | relative_url }}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="{{ "/2026/assets/img/gallery/torino2.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery" data-title="OGR Torino">
+                  <img src="{{ "/2026/assets/img/gallery/torino2.jpg" | relative_url }}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="{{ "/2026/assets/img/gallery/torino3.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery" data-title="OGR Torino 2">
+                  <img src="{{ "/2026/assets/img/gallery/torino3.jpg" | relative_url }}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4">
+              <div class="venue-gallery">
+                <a href="{{ "/2026/assets/img/gallery/torino4.jpg" | relative_url }}" class="glightbox" data-gall="venue-gallery" data-title="Via Roma">
+                  <img src="{{ "/2026/assets/img/gallery/torino4.jpg" | relative_url }}" alt="" class="img-fluid">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </section><!-- End Venue Section -->
+
+
+    <!-- ======= Organizers Section ======= -->
+    <section id="organizers">
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>General Chairs</h2>
+        </div>
+        <div class="row">
+      {% for organizer in edition.organizers %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <!--<img src="{{ "/2026/assets/img/organizers/" | append: organizer.picture | relative_url }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <div class="details">
+               <big><a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a></big><br/>
+               {{ organizer.affiliation }}
+               </div>
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
+      <br><br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Program Chairs</h2>
+        </div>
+        <div class="row">
+      {% for program_chair in edition.program_chairs %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <!--<img src="{{ "/2026/assets/img/organizers/" | append: organizer.picture | relative_url }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <div class="details">
+               <big><a href="{{ program_chair.website }}" target="_new">{{ program_chair.name }}</a></big><br/>
+               {{ program_chair.affiliation }}
+               </div>
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
+      <br><br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Local Organizing Committee</h2>
+        </div>
+        <div class="row">
+      {% for local_org in edition.local_organizing_committee %}
+          <div class="col-lg-3 col-md-4">
+            <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+              <!--<img src="{{ "/2026/assets/img/organizers/" | append: organizer.picture | relative_url }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
+              <div class="details">
+               <big><a href="{{ local_org.website }}" target="_new">{{ local_org.name }}</a></big><br/>
+               {{ local_org.affiliation }}
+               </div>
+              </div>
+            </div>
+      {% endfor %}
+        </div>
+      </div>
+      <br><br>
+      {% assign count = edition.steering_committee | size %}
+      {% if count > 0 %}
+        <div class="container section-white-bg" data-aos="fade-up">
+          <div class="section-header">
+            <h2>Steering Committee of the Society</h2>
+          </div>
+          <div class="row">
+        {% for member in edition.steering_committee %}
+            <div class="col-lg-3 col-md-4">
+              <div class="speaker" data-aos="fade-up" data-aos-delay="100">
+                <span class="member">{{ member.name }}</span><br/>{{ member.affiliation }}
+                </div>
+              </div>
+        {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+        </div>
+    {% assign count = edition.scientific_committee | size %}
+    {% if count > 0 %}
+    <div class="container section-white-bg" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Program Committee</h2>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p style="font-size: 0.85em; line-height: 1.6; text-align: center;">
+            {% for member in edition.scientific_committee %}
+              {{ member.name }}{% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    </div>
+    </section><!-- End Organizers Section -->
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="{{ "/2026/assets/img/logo_cs2italy.png" | relative_url }}" alt="CS2Italy">
+            <p>{{ conference.description }}</p>
+          </div>
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://turismotorino.org/en" target="new">About Torino</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitpiemonte.com/" target="_new">Visit Piemonte</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://turismotorino.org/en/visit/things-to-do-and-things-to-see/torino-with-kids" target="_new">Family Activities</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a onclick="showCookieBanner()">Cookie Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              CS2Italy<br/>Organization Committee <br>
+              Torino<br>
+              Italy <br>
+              <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ conference.email }}</a><br>
+            </p>
+            <!--
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cb-cookie-banner" class="alert alert-dark text-center mb-0" role="alert">
+      &#x1F36A; This site does not use cookies. No personal data is stored or tracked during your visit.
+      <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()">
+        I Got It
+      </button>
+    </div>
+    <!-- End of Cookie Banner -->
+
+    <div class="container">
+      <div class="copyright">
+        &copy;&nbsp;<strong>CS2Italy</strong>&nbsp;CC-BY 4.0 - design lihuama
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+      -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ "/2026/assets/vendor/aos/aos.js" | relative_url }}"></script>
+  <script src="{{ "/2026/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
+  <script src="{{ "/2026/assets/vendor/glightbox/js/glightbox.min.js" | relative_url }}"></script>
+  <script src="{{ "/2026/assets/vendor/swiper/swiper-bundle.min.js" | relative_url }}"></script>
+  <script async src="{{ "/2026/assets/vendor/bootstrap-cookie-banner/cookie-banner.js" | relative_url }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ "/2026/assets/js/main.js" | relative_url }}"></script>
+
+</body>
+
+</html>

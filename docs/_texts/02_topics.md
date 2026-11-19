@@ -14,6 +14,7 @@
 - Agent-based or other simulation of social phenomena
 - Text analysis and natural language processing (NLP) of social phenomena
 - Analysis of meaning through computational analysis of text, images, audio, video, etc.
+- Computational models of human behaviour
 - Use of computational methods to map and study cultural patterns and dynamics
 - Social news curation and collaborative filtering
 - Computational social science research in industry, government, and philanthropy
@@ -36,4 +37,5 @@
 The accepted contributions will be selected for one of the following presentations:
 - a lightning talk (~6 mins) in a plenary session
 - an oral presentation in parallel tracks
+- a poster
 

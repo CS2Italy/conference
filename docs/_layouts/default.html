@@ -32,7 +32,7 @@
 	  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
 	  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
 	  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-	  <link rel="manifest" href="asset/img/site.webmanifest">
+	  <link rel="manifest" href="assets/img/site.webmanifest">
 
 	  <!-- Vendor CSS Files -->
 	  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 	  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 	  <link href="assets/vendor/bootstrap-cookie-banner/cookie-banner.css" rel="stylesheet">
 	  <!-- Template Main CSS File -->
-	  <link href="assets/css/style.css" rel="stylesheet">
+	  <link href="assets/css/style.css?v=2027-2" rel="stylesheet">
 
 	  <!-- =======================================================
 	  * Template Name: TheEvent
@@ -67,17 +67,23 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#home">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">The Conference</a></li>
-          {% if count_speakers > 0 %}
           <li><a class="nav-link scrollto" href="#speakers">Speakers</a></li>
-          {% endif %}
           <li><a class="nav-link scrollto" href="#cfp">Topics</a></li>
           <li><a class="nav-link scrollto" href="#dates">Submit</a></li>
           <li><a class="nav-link scrollto" href="#schedule">Program</a></li>
           <!--<li><a class="nav-link scrollto" href="#tutorials">Tutorials</a></li>-->
           <li><a class="nav-link scrollto" href="#registrationfees">Registration</a></li>
+          {% if site.data.sponsors != empty %}
           <li><a class="nav-link scrollto" href="#supporters">Sponsors</a></li>
+          {% endif %}
           <li><a class="nav-link scrollto" href="#venue">Venue</a></li>
           <li><a class="nav-link scrollto" href="#organizers">Organization</a></li>
+          <li class="dropdown"><a href="#"><span>Past editions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="2026/">2026 &ndash; Torino</a></li>
+              <li><a href="2025/">2025 &ndash; Trento</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -118,7 +124,6 @@
       </div>
     </section><!-- End About Section -->
 
-    {% if count_speakers > 0 %}
     <!-- ======= Speakers Section ======= -->
     <section id="speakers" class="section-with-bg">
      <div class="container section-title" data-aos="fade-up">
@@ -126,7 +131,8 @@
                <h2>Invited Speakers</h2>
                     <p>{{ site.speakers_intro }}</p>
              </div>
-     
+     {% if count_speakers > 0 %}
+
          <div class="row d-flex justify-content-center align-items-stretch">
              {% for speaker in site.data.speakers limit:2 %}
              {% if speaker.name %}
@@ -172,9 +178,12 @@
              {% endif %}
              {% endfor %}
          </div>
+     {% else %}
+         <p class="text-center"><strong>To be announced</strong></p>
+     {% endif %}
+     </div>
      </section>
     <!-- /Speakers Section -->
- {% endif %}
 
     <!-- ======= CfP Section ======= -->
     <section id="cfp">
@@ -217,6 +226,8 @@
         <div class="section-header">
           <h2>Program</h2>
         </div>
+        {% assign count_program = site.data.program_day1 | size %}
+        {% if count_program > 0 %}
         <div class="section-header">
           <h4>A detailed program of all conference sessions is <a href="https://docs.google.com/document/d/1r0MryZaCUAlysDaqIP5mxgc5TNVOCBvaye6CWw1xim0/edit?usp=sharing"> available here</a>.</h4>
         </div>
@@ -239,7 +250,7 @@
           
         </ul>
 
-        <h3 class="sub-heading">All times below are <a href="https://time.is/Torino">CEST.</a></h3>
+        <h3 class="sub-heading">All times below are <a href="https://time.is/Rome">CEST.</a></h3>
 
         <div class="tab-content row justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <!-- Schedule Day 1 -->
@@ -316,6 +327,9 @@
 
 
         </div>
+        {% else %}
+        <p class="text-center"><strong>To be announced</strong></p>
+        {% endif %}
 
       </div>
 
@@ -343,7 +357,8 @@
       </div>
     </section><!-- End Registration Section -->
 
-<!-- ======= Supporters Section ======= -->
+<!-- ======= Supporters Section (shown only when _data/sponsors.csv has rows) ======= -->
+    {% if site.data.sponsors != empty %}
     <section id="supporters">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -362,12 +377,13 @@
                 </div>
               </div>
               {% endfor %}
-    
+
             </div>
-    
+
           </div>
-    
+
         </section><!-- End Sponsors Section -->
+    {% endif %}
 
 
 
@@ -381,75 +397,58 @@
         </div>
       
           <div class="row g-0">
-      
+
             <!-- Map column -->
             <div class="col-lg-6 venue-map">
-              <iframe width="100%" height="300px" loading="lazy" frameborder="0" allowfullscreen allow="geolocation"
-                src="https://umap.openstreetmap.fr/en/map/cs2italy2026_1305536?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=none&captionBar=false&captionMenus=false#13/45.0659/7.682">
+              <iframe width="100%" height="300px" loading="lazy" frameborder="0"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=12.5046%2C41.8964%2C12.5206%2C41.9044&layer=mapnik&marker=41.9004%2C12.5126">
               </iframe>
             </div>
-      
+
             <!-- Venue info column -->
             <div class="col-lg-6 venue-info d-flex align-items-center">
               <div class="row justify-content-center w-100">
                 <div class="col-11 col-lg-8 position-relative">
                   <h3>
-                    <a href="https://ogrtorino.it/">OGR</a><br>
-                    Torino, Italy
+                    <a href="https://www.cnr.it/">Consiglio Nazionale delle Ricerche</a><br>
+                    Headquarters, Rome
                   </h3>
-                  <p>Corso Castelfidardo 22, 10128 Torino</p>
+                  <p>Piazzale Aldo Moro 7, 00185 Roma</p>
                 </div>
               </div>
             </div>
-      
+
           </div>
-      
+
         </div>
 
         <div class="container-fluid venue-gallery-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row g-0">
-        
-            <div class="col-lg-3 col-md-4">
+          <div class="row g-0 justify-content-center">
+            {% for photo in site.data.venue_gallery %}
+            <!-- only photos already uploaded to assets/img/gallery/ are shown -->
+            {% assign photo_path = "/assets/img/gallery/" | append: photo.file %}
+            {% assign photo_file = site.static_files | where: "path", photo_path | first %}
+            {% if photo_file %}
+            <div class="col-lg col-md-4 col-6">
               <div class="venue-gallery">
-                <a href="assets/img/gallery/torino1.jpg" class="glightbox" data-gall="venue-gallery" data-title="Vista dal Monte dei Cappuccini">
-                  <img src="assets/img/gallery/torino1.jpg" alt="" class="img-fluid">
+                <a href="assets/img/gallery/{{ photo.file }}" class="glightbox" data-gall="venue-gallery" data-title="{{ photo.title }}">
+                  <img src="assets/img/gallery/{{ photo.file }}" alt="{{ photo.title }}" class="img-fluid">
                 </a>
               </div>
             </div>
-        
-            <div class="col-lg-3 col-md-4">
-              <div class="venue-gallery">
-                <a href="assets/img/gallery/torino2.jpg" class="glightbox" data-gall="venue-gallery" data-title="OGR Torino">
-                  <img src="assets/img/gallery/torino2.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-        
-            <div class="col-lg-3 col-md-4">
-              <div class="venue-gallery">
-                <a href="assets/img/gallery/torino3.jpg" class="glightbox" data-gall="venue-gallery" data-title="OGR Torino 2">
-                  <img src="assets/img/gallery/torino3.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-        
-            <div class="col-lg-3 col-md-4">
-              <div class="venue-gallery">
-                <a href="assets/img/gallery/torino4.jpg" class="glightbox" data-gall="venue-gallery" data-title="Via Roma">
-                  <img src="assets/img/gallery/torino4.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-            </div>
-        
+            {% endif %}
+            {% endfor %}
           </div>
         </div>
-        
+
     </section><!-- End Venue Section -->
 
 
     <!-- ======= Organizers Section ======= -->
     <section id="organizers">
       <br>
+      <!-- General Chairs, Program Chairs and Program Committee are shown only when their CSV has rows -->
+      {% if site.data.organizers != empty %}
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>General Chairs</h2>
@@ -460,7 +459,7 @@
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
               <div class="details">
-               <big><a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a></big><br/>
+               <big>{% if organizer.website %}<a href="{{ organizer.website }}" target="_new">{{ organizer.name }}</a>{% else %}{{ organizer.name }}{% endif %}</big><br/>
                {{ organizer.affiliation }}
                </div>
               </div>
@@ -469,6 +468,8 @@
         </div>
       </div>
       <br><br>
+      {% endif %}
+      {% if site.data.program_chairs != empty %}
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Program Chairs</h2>
@@ -479,7 +480,7 @@
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
               <div class="details">
-               <big><a href="{{ program_chair.website }}" target="_new">{{ program_chair.name }}</a></big><br/>
+               <big>{% if program_chair.website %}<a href="{{ program_chair.website }}" target="_new">{{ program_chair.name }}</a>{% else %}{{ program_chair.name }}{% endif %}</big><br/>
                {{ program_chair.affiliation }}
                </div>
               </div>
@@ -488,22 +489,24 @@
         </div>
       </div>
       <br><br>
+      {% endif %}
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-          <h2>Local Organizing Committee</h2>
+          <h2>Organizing Committee</h2>
         </div>
-        <div class="row">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center">
       {% for local_org in site.data.local_organizing_committee %}
-          <div class="col-lg-3 col-md-4">
+          <div class="col">
             <div class="speaker" data-aos="fade-up" data-aos-delay="100">
               <!--<img src="assets/img/organizers/{{ organizer.picture }}" alt="{{ organizer.name }}" class="img-fluid grayscale">-->
               <div class="details">
-               <big><a href="{{ local_org.website }}" target="_new">{{ local_org.name }}</a></big><br/>
+               <big>{% if local_org.website %}<a href="{{ local_org.website }}" target="_new">{{ local_org.name }}</a>{% else %}{{ local_org.name }}{% endif %}</big><br/>
                {{ local_org.affiliation }}
                </div>
               </div>
             </div>
       {% endfor %}
+      {% if site.data.local_organizing_committee == empty %}<p class="text-center"><strong>To be announced</strong></p>{% endif %}
         </div>
       </div>
       <br><br>
@@ -525,8 +528,7 @@
         </div>
       {% endif %}
         </div>
-    {% assign count = site.data.scientific_committee | size %}
-    {% if count > 0 %}
+    {% if site.data.scientific_committee != empty %}
     <div class="container section-white-bg" data-aos="fade-up">
       <div class="section-header">
         <h2>Program Committee</h2>
@@ -560,9 +562,8 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://turismotorino.org/en" target="new">About Torino</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitpiemonte.com/" target="_new">Visit Piemonte</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="https://turismotorino.org/en/visit/things-to-do-and-things-to-see/torino-with-kids" target="_new">Family Activities</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.turismoroma.it/en" target="new">About Rome</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="https://www.visitlazio.com/en/" target="_new">Visit Lazio</a></li>
               <li><i class="bi bi-chevron-right"></i> <a onclick="showCookieBanner()">Cookie Policy</a></li>
             </ul>
           </div>
@@ -571,7 +572,7 @@
             <h4>Contact Us</h4>
             <p>
               CS2Italy<br/>Organization Committee <br>
-              Torino<br>
+              Rome<br>
               Italy <br>
               <strong>Email:</strong> <a href="mailto:cs2italy@gmail.com" class="__cf_email__" >{{ site.email }}</a><br>
             </p>
