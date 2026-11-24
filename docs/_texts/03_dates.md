@@ -8,7 +8,7 @@ Registration deadline: April 30, 2027<br/>
 <b>Conference days:</b> May 24-25, 2027<br/>
 
 <h3>Abstract submission instructions</h3>
-Submissions are in the form of extended abstracts (max 2 pages) written in English, in PDF format, formatted according to the **official [LaTeX](https://drive.google.com/file/d/15maGbb34Hjq3aWZoXgmW9JVPWj5t1803/view?usp=sharing) or [MS Word](https://www.dropbox.com/scl/fi/8gv3h2b7dk7bw6hnep96e/cs2italy_2026_word_template.docx?rlkey=ldbml0427n4oh2p5cx9lpid4t&dl=0) template**. 
+Submissions are in the form of extended abstracts (max 2 pages) written in English, in PDF format, formatted according to the **official [LaTeX](assets/templates/cs2italy_2027_latex_template.zip) or [MS Word](assets/templates/cs2italy_2027_word_template.docx) template**. 
 
 The submission should include a title, author names and affiliations, and an extended abstract (serving as the main text of the submission). The abstract should outline the impact of the work, along with (if relevant) the main theoretical contribution, data and methods used, and findings. Authors are strongly encouraged to include figures and/or tables in their submission (note that figures and/or tables, and references will not count towards the page limit). Submitted abstracts will undergo a single-blind review process. Follow the submission link below to submit your abstract.
 

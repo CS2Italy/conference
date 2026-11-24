@@ -32,6 +32,23 @@
 - Reproducibility in computational social science research
 - Infrastructure to facilitate industry/academic cooperation in computational social science
 - Novel digital data and computational analyses for addressing societal challenges
+- Large language models for social research
+- Mathematical modeling and game theory of social systems
+
+## Application Domains
+*Computational work on specific social domains and societal challenges.*
+- Information diffusion, misinformation and fact-checking
+- Politics, polarization and political communication
+- Opinion dynamics, cooperation and social norms
+- Social media and online platforms
+- Epidemics and public health
+- Human mobility, migration and urban systems
+- Economy, labor markets and the future of work
+- Inequality, segregation, gender and diversity
+- Science of science, innovation and education
+- Environment, climate change, disasters and crises
+- Artificial intelligence and human-AI interaction
+- Public policy, governance and civic engagement
 
 ### Types of contribution
 The accepted contributions will be selected for one of the following presentations:
