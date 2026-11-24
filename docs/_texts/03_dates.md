@@ -17,4 +17,4 @@ Submissions will be non-archival, and thus the presented work can be already pub
 <h3>How to submit</h3>
 Abstracts must be submitted through Microsoft CMT. To submit, you need a CMT account: if you do not have one yet, please [create it](https://cmt3.research.microsoft.com/docs/help/general/account-creation.html) before the deadline. Instructions on how to fill in the submission form are available in the [CMT author guide](https://cmt3.research.microsoft.com/docs/help/author/author-submission-form.html).
 
-**[Submit your abstract on Microsoft CMT](https://cmt3.research.microsoft.com/CSItaly2027)**
+<p style="text-align: center; font-size: 1.5em; font-weight: bold; margin-top: 20px;"><a href="https://cmt3.research.microsoft.com/CSItaly2027">Submit your abstract on Microsoft CMT</a></p>
